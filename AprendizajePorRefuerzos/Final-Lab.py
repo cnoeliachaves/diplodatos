@@ -1186,6 +1186,8 @@ class NetD(nn.Module):
     def __init__(self, _input_size: int, _output_size: int, _hidden_layers: int, _hidden_size: int):
         super(NetD, self).__init__()
         self.input = nn.Linear(_input_size, _hidden_size)
+        #agrego la parte de advantage
+        #self.advantage = nn.Linear(1,2)
         self.hidden_layers = _hidden_layers
         self.hidden = []
         for i in range(_hidden_layers):
@@ -1193,7 +1195,7 @@ class NetD(nn.Module):
             self.add_module('h'+str(i), layer)
             self.hidden.append(layer)
         self.output = nn.Linear(_hidden_size, _output_size)
-
+        self.advantage = nn.Linear(_hidden_size, _output_size)
         # init weights
         for m in self.modules():
             if isinstance(m, nn.Linear):
@@ -1206,11 +1208,12 @@ class NetD(nn.Module):
     def forward(self, x):
         x = F.relu(self.input(x))
         #aca habria que cambiar para la parte de la division
-        #for i in range(self.hidden_layers):
-        #    x = F.relu(self.hidden[i](x))
+        for i in range(self.hidden_layers):
+            x = F.relu(self.hidden[i](x))
 
-        x = self.output(x)
-        return x
+        v = self.output(x)
+        a = self.advantage(x)
+        return v,a
 
 class DDDQN:
     def __init__(self, env, n_episodes=3000, max_env_steps=None, gamma=0.9,
