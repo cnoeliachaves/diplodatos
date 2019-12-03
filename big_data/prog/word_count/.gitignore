@@ -1,0 +1,9 @@
+/bin/
+/target/
+/project/
+/.settings/
+/.cache-main
+/.classpath
+/.project
+/out/
+/out_csv_dir/

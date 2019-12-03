@@ -1,0 +1,972 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n# Curso Diplodatos Programación Distribuida Sobre Grandes Volumenes de Datos\n# Práctico parte 2\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:04:26 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCurso Diplodatos Programación Distribuida Sobre Grandes Volumenes de Datos\u003c/h1\u003e\n\u003ch1\u003ePráctico parte 2\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540820840282_-554572439",
+      "id": "20181029-104720_1108826844",
+      "dateCreated": "Oct 29, 2018 10:47:20 AM",
+      "dateStarted": "Oct 29, 2018 10:47:50 AM",
+      "dateFinished": "Oct 29, 2018 10:47:52 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## ML - Clasificación",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 12:00:49 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eML - Clasificación\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540821867278_-166084440",
+      "id": "20181029-110427_1994818832",
+      "dateCreated": "Oct 29, 2018 11:04:27 AM",
+      "dateStarted": "Oct 29, 2018 12:00:42 PM",
+      "dateFinished": "Oct 29, 2018 12:00:42 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Antes de comenzar\n\n1. Activar virtualenv (con `matplotlib` `pandas` y `plotly` instalados):\n```sh\ncd\ncd spark\n. python_zeppelin/bin/activate\n```\n\n1. Lanzar [Zeppelin](http://zeppelin.apache.org/):\n```sh\ncd spark/zeppelin-0.7.3-bin-all\n./bin/zeppelin.sh\n```\n\n### Para hacer los ejercicios \n\n* Ejecutar las celdas del notebook anteriores al mismo.\n* Ejecutar las siguientes para ver visualización resultado.",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:11:58 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eAntes de comenzar\u003c/h3\u003e\n\u003col\u003e\n  \u003cli\u003e\n  \u003cp\u003e\n  \u003cp\u003eActivar virtualenv (con \u003ccode\u003ematplotlib\u003c/code\u003e \u003ccode\u003epandas\u003c/code\u003e y \u003ccode\u003eplotly\u003c/code\u003e instalados):\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd\ncd spark\n. python_zeppelin/bin/activate\n\u003c/code\u003e\u003c/pre\u003e\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eLanzar \u003ca href\u003d\"http://zeppelin.apache.org/\"\u003eZeppelin\u003c/a\u003e:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd spark/zeppelin-0.7.3-bin-all\n./bin/zeppelin.sh\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003ch3\u003ePara hacer los ejercicios\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003eEjecutar las celdas del notebook anteriores al mismo.\u003c/li\u003e\n  \u003cli\u003eEjecutar las siguientes para ver visualización resultado.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540822697589_333678666",
+      "id": "20181029-111817_1103555902",
+      "dateCreated": "Oct 29, 2018 11:18:17 AM",
+      "dateStarted": "Oct 29, 2018 5:11:42 PM",
+      "dateFinished": "Oct 29, 2018 5:11:43 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Creación de fetures y labels en train",
+      "text": "val inputFile \u003d \"../../diplodatos_bigdata/ds/people_sex_height_age_weight.json\"\n\nval people \u003d spark.read.json(inputFile)\n    .select($\"kgs\", $\"mts\", $\"sex\")\n    .repartition(sc.defaultParallelism)\n    .cache\n\n// Saparo entrenamiento y test\nval Array(trainDF, testDF) \u003d people.randomSplit(Array(0.95, 0.05)) \n\n// Creación de vector de features\nimport org.apache.spark.ml.feature.VectorAssembler\n\nval vAssembler \u003d new VectorAssembler()\n  .setInputCols(Array(\"kgs\", \"mts\"))\n  .setOutputCol(\"features\")\n\nval trainAssembled \u003d vAssembler.transform(trainDF)\n\n// Creación de labels\nimport org.apache.spark.ml.feature.StringIndexer\n\nval strIndexer \u003d new StringIndexer()\n  .setInputCol(\"sex\")\n  .setOutputCol(\"label\")\n\n// indexer tiene que leer la entrada\nval sexIndexer \u003d strIndexer.fit(trainAssembled)\n\nval trainFeaturized \u003d sexIndexer.transform(trainAssembled)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:56:37 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540821889127_1573947656",
+      "id": "20181029-110449_26970733",
+      "dateCreated": "Oct 29, 2018 11:04:49 AM",
+      "dateStarted": "Oct 29, 2018 11:56:37 AM",
+      "dateFinished": "Oct 29, 2018 11:57:09 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Featurize dataset de test",
+      "text": "val testAssembled \u003d vAssembler.transform(testDF)\nval testFeaturized \u003d sexIndexer.transform(testAssembled)\n\ntestFeaturized.createOrReplaceTempView(\"testFeaturized\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:57:17 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823174872_-271808834",
+      "id": "20181029-112614_1725301087",
+      "dateCreated": "Oct 29, 2018 11:26:14 AM",
+      "dateStarted": "Oct 29, 2018 11:57:17 AM",
+      "dateFinished": "Oct 29, 2018 11:57:18 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Crea grid peso*altura del fondo",
+      "text": "import org.apache.spark.sql.DataFrame\n\ndef createGrid() : DataFrame \u003d {\n\n    val maxTics \u003d 255\n\n    def fgrid (x:Int, min:Double, max:Double, tics: Int) : Double \u003d {\n        val tics2 \u003d tics - 2\n        return ((x-1)*(max-min)+tics2*min)/tics2.toDouble\n    }\n\n    val (minKgs, maxKgs, minMts, maxMts) \u003d\n        people.agg(min(\u0027kgs), max(\u0027kgs), min(\u0027mts), max(\u0027mts))\n            .as[(Double,Double,Double,Double)].first\n\n    return sc.parallelize(0 to maxTics)\n            .flatMap(x \u003d\u003e (0 to maxTics).map((x,_)))\n            .map{case (x,y) \u003d\u003e (fgrid(x,minKgs,maxKgs,maxTics), fgrid(y,minMts,maxMts,maxTics))}\n            .toDF(\"kgs\",\"mts\")\n}\n\nval grid \u003d vAssembler.transform(createGrid()).cache\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:57:22 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540822679711_-1277680376",
+      "id": "20181029-111759_1066618113",
+      "dateCreated": "Oct 29, 2018 11:17:59 AM",
+      "dateStarted": "Oct 29, 2018 11:57:22 AM",
+      "dateFinished": "Oct 29, 2018 11:57:26 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Image Plotter en Python",
+      "text": "%pyspark\n\ndef plot_classification(nomTable\u003d\"test\",surfaceTable\u003d\"grid\", prob\u003dFalse):\n    import matplotlib.pyplot as plt\n    import numpy as np\n    import matplotlib.cm as cm\n\n    from matplotlib.colors import ListedColormap, LinearSegmentedColormap\n\n    cmap_light \u003d LinearSegmentedColormap.from_list(\"light\", [\u0027#FF5555\u0027, \u0027#5555FF\u0027])\n    cmap_pastel \u003d LinearSegmentedColormap.from_list(\"pastel\", [\u0027#FF8888\u0027, \u0027#8888FF\u0027])\n    cmap_bold \u003d ListedColormap([\u0027#FF0000\u0027, \u0027#00FF00\u0027, \u0027#0000FF\u0027])\n\n    # helper function to display in Zeppelin\n    def show(p):\n        import StringIO\n        img \u003d StringIO.StringIO()\n        p.savefig(img, format\u003d\u0027png\u0027)#,dpi\u003d600)\n        img.seek(0)\n        print \"%html \u003cdiv style\u003d\u0027width:600px\u0027\u003e\u003cimg src\u003d\\\"data:image/png;base64,\" + img.buf.encode(\u0027base64\u0027).replace(\u0027\\n\u0027, \u0027\u0027) + \"\\\"/\u003e\u003c/div\u003e\"\n\n    plt.close(\u0027all\u0027)\n\n    plt.autoscale(enable\u003dTrue, axis\u003d\u0027x\u0027, tight\u003dTrue)\n\n    if surfaceTable:\n        sTable \u003d sqlContext.table(surfaceTable)\n\n        if prob:\n            pSTable \u003d sTable.select(\u0027kgs\u0027,\u0027mts\u0027,\u0027prob\u0027).toPandas()\n            Z \u003d pSTable[\u0027prob\u0027]\n        else:\n            pSTable \u003d sTable.select(\u0027kgs\u0027,\u0027mts\u0027,\u0027prediction\u0027).toPandas()\n            Z \u003d pSTable[\u0027prediction\u0027]\n\n        xs \u003d pSTable[\u0027kgs\u0027]\n        ys \u003d pSTable[\u0027mts\u0027]\n\n        xUs \u003d xs.unique()\n        yUs \u003d ys.unique()\n\n        xx, yy \u003d np.meshgrid(xUs,yUs)\n\n        Z \u003d Z.values.reshape(xx.shape).transpose()\n\n        if prob:\n            plt.pcolormesh(xx, yy, Z, cmap\u003dcmap_light)\n        else:\n            plt.pcolormesh(xx, yy, Z, cmap\u003dcmap_pastel)\n\n        plt.axis([xs.min(), xs.max(), ys.min(), ys.max()])\n\n    table \u003d sqlContext.table(nomTable)\n    \n    pTable \u003d table.select(\u0027kgs\u0027,\u0027mts\u0027,\u0027label\u0027).toPandas().sample(frac\u003d1)\n\n    xs \u003d pTable[\u0027kgs\u0027]\n    ys \u003d pTable[\u0027mts\u0027]\n    cs \u003d pTable[\u0027label\u0027]\n    plt.scatter(xs, ys, c\u003dcs, cmap\u003dcmap_bold, alpha\u003d0.5, s\u003d16)\n    plt.xlabel(\u0027kgs\u0027)\n    plt.ylabel(\u0027mts\u0027)\n\n    show(plt)\n    plt.close()",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:57:32 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823023806_-1633666698",
+      "id": "20181029-112343_857715862",
+      "dateCreated": "Oct 29, 2018 11:23:43 AM",
+      "dateStarted": "Oct 29, 2018 11:57:32 AM",
+      "dateFinished": "Oct 29, 2018 11:57:33 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Ejercicio ~\n\nModifique el siguiente programa para aumentar la **profundidad** del árbol de decisión a 10.\n\n#### Ayuda\n\n* Busque en documentación [API Spark - Decision Trees](http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.ml.classification.DecisionTreeClassifier) el *parameter setter*.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:47:05 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjercicio ~\u003c/h2\u003e\n\u003cp\u003eModifique el siguiente programa para aumentar la \u003cstrong\u003eprofundidad\u003c/strong\u003e del árbol de decisión a 10.\u003c/p\u003e\n\u003ch4\u003eAyuda\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eBusque en documentación \u003ca href\u003d\"http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.ml.classification.DecisionTreeClassifier\"\u003eAPI Spark - Decision Trees\u003c/a\u003e el \u003cem\u003eparameter setter\u003c/em\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540820870721_-1167816214",
+      "id": "20181029-104750_420622524",
+      "dateCreated": "Oct 29, 2018 10:47:50 AM",
+      "dateStarted": "Oct 29, 2018 11:46:56 AM",
+      "dateFinished": "Oct 29, 2018 11:46:56 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.ml.classification.DecisionTreeClassifier\n\n// Se crea el Evaluator\nval dtEstimator2 \u003d new DecisionTreeClassifier()\n                .setFeaturesCol(\"features\")\n                .setLabelCol(\"label\")\n                .set... // llenar aqui la profundidad\n\n// Se crea el modelo con los datos de test featurizados\nval dtModel2 \u003d dtEstimator2...\n\n// Se predice la grilla\nval gridPredictionDT2 \u003d dtModel2.transform(grid)\n\n// Se envía a python para plotear\ngridPredictionDT2.createOrReplaceTempView(\"gridPredictionDT2\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:28:02 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540820996560_-1099530124",
+      "id": "20181029-104956_1885691069",
+      "dateCreated": "Oct 29, 2018 10:49:56 AM",
+      "dateStarted": "Oct 29, 2018 11:28:13 AM",
+      "dateFinished": "Oct 29, 2018 11:28:19 AM",
+      "status": "ERROR",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nplot_classification(nomTable\u003d\"testFeaturized\", surfaceTable\u003d\"gridPredictionDT2\")",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:58:06 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823088559_-1269801508",
+      "id": "20181029-112448_800493583",
+      "dateCreated": "Oct 29, 2018 11:24:48 AM",
+      "dateStarted": "Oct 29, 2018 11:58:06 AM",
+      "dateFinished": "Oct 29, 2018 11:58:10 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Ejercicio ~\n\nModificar el siguiente programa para utilizar [Spark Polinomial Expansion](http://spark.apache.org/docs/latest/ml-features.html#polynomialexpansion).\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:27:05 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjercicio ~\u003c/h2\u003e\n\u003cp\u003eModificar el siguiente programa para utilizar \u003ca href\u003d\"http://spark.apache.org/docs/latest/ml-features.html#polynomialexpansion\"\u003eSpark Polinomial Expansion\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823100006_-531437720",
+      "id": "20181029-112500_1033565918",
+      "dateCreated": "Oct 29, 2018 11:25:00 AM",
+      "dateStarted": "Oct 29, 2018 11:47:13 AM",
+      "dateFinished": "Oct 29, 2018 11:47:13 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.ml.classification.LogisticRegression\nimport org.apache.spark.ml.feature.PolynomialExpansion\nimport org.apache.spark.ml.linalg.Vector\n\nval polyExpansion \u003d new PolynomialExpansion()\n  .setInputCol(\"features\")\n  .setOutputCol(\"features_expansion\")\n  .setDegree(...) // llenar (ver documentacion)\n\nval lrEstimatorPoly \u003d new LogisticRegression()\n  .setFeaturesCol(...) // llenar\n  .setMaxIter(100)\n  .setRegParam(0.01)\n\nval trainFeaturizedPoly \u003d polyExpansion.transform(trainFeaturized)\n\nval lrModelPoly \u003d lrEstimatorPoly.fit(...) // llenar\n\n\nval gridPoly \u003d polyExpansion.transform(grid)\n\nval gridPredictionLRPoly \u003d lrModelPoly.transform(gridPoly)\n\nval vec2ColUDF \u003d udf((x:Vector, index: Int) \u003d\u003e x(index))\n\ngridPredictionLRPoly\n    .select($\"*\",vec2ColUDF($\"probability\",lit(1)).as(\"prob\"))\n    .createOrReplaceTempView(\"gridPredictionLRPoly\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:54:24 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540824815622_1888651998",
+      "id": "20181029-115335_171373723",
+      "dateCreated": "Oct 29, 2018 11:53:35 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nplot_classification(nomTable\u003d\"testFeaturized\", surfaceTable\u003d\"gridPredictionLRPoly\", prob\u003dTrue)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 11:58:39 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540824775878_98738818",
+      "id": "20181029-115255_953054086",
+      "dateCreated": "Oct 29, 2018 11:52:55 AM",
+      "dateStarted": "Oct 29, 2018 11:58:39 AM",
+      "dateFinished": "Oct 29, 2018 11:58:42 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## ML - Clustering\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:33:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eML - Clustering\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540825258447_277000152",
+      "id": "20181029-120058_1154462593",
+      "dateCreated": "Oct 29, 2018 12:00:58 PM",
+      "dateStarted": "Oct 29, 2018 12:01:34 PM",
+      "dateFinished": "Oct 29, 2018 12:01:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Creación de datos 3D al azar",
+      "text": "import org.apache.spark.ml.linalg.{Vector,Vectors}\nimport org.apache.spark.sql.{DataFrame, Row}\nimport org.apache.spark.mllib.random.RandomRDDs.normalVectorRDD\n\nval dimension \u003d 3\nval cantVect \u003d 50\nval disper \u003d 5.0\n\n// Creo cantVect puntos con distribucion normal centrado en 5 ptos\nval dataset1 \u003d normalVectorRDD(sc, cantVect, dimension).\n    map(v \u003d\u003e Tuple1.apply(Vectors.dense(v(0), v(1), v(2)))).toDF(\"features\")\n\nval dataset2 \u003d normalVectorRDD(sc, cantVect, dimension).\n    map(v \u003d\u003e Tuple1.apply(Vectors.dense(v(0)+disper, v(1), v(2)))).toDF(\"features\")\n\nval dataset3 \u003d normalVectorRDD(sc, cantVect, dimension).\n    map(v \u003d\u003e Tuple1.apply(Vectors.dense(v(0), v(1)+disper, v(2)))).toDF(\"features\")\n\nval dataset4 \u003d normalVectorRDD(sc, cantVect, dimension).\n    map(v \u003d\u003e Tuple1.apply(Vectors.dense(v(0), v(1), v(2)+disper))).toDF(\"features\")\n\nval dataset5 \u003d normalVectorRDD(sc, cantVect, dimension).\n    map(v \u003d\u003e Tuple1.apply(Vectors.dense(v(0)+disper, v(1)+disper, v(2)+disper))).toDF(\"features\")\n\nval dataset \u003d dataset1.union(dataset2).union(dataset3).union(dataset4).union(dataset5)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:22:47 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540825329431_-1172859586",
+      "id": "20181029-120209_2027943103",
+      "dateCreated": "Oct 29, 2018 12:02:09 PM",
+      "dateStarted": "Oct 29, 2018 5:20:56 PM",
+      "dateFinished": "Oct 29, 2018 5:21:26 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Ejercicio ~\n\nComplete el código siguiente para implementar un modelo que clusterice los datos anteriores utilizando Bisecting K-means.\n\n### Ayuda\n* [Bsecting K-means](http://spark.apache.org/docs/latest/ml-clustering.html#bisecting-k-means) en Spark.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:31:26 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjercicio ~\u003c/h2\u003e\n\u003cp\u003eComplete el código siguiente para implementar un modelo que clusterice los datos anteriores utilizando Bisecting K-means.\u003c/p\u003e\n\u003ch3\u003eAyuda\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://spark.apache.org/docs/latest/ml-clustering.html#bisecting-k-means\"\u003eBsecting K-means\u003c/a\u003e en Spark.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540843965134_-505200792",
+      "id": "20181029-171245_320639552",
+      "dateCreated": "Oct 29, 2018 5:12:45 PM",
+      "dateStarted": "Oct 29, 2018 5:31:26 PM",
+      "dateFinished": "Oct 29, 2018 5:31:26 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.ml.clustering.BisectingKMeans\n\nval kmeans \u003d new ...\n  .setK(...)                          \n  .setFeaturesCol(...)\n  .setPredictionCol(\"prediction\")\n\nval model \u003d kmeans.fit(dataset)\n\n// Evaluacion de los datos\nval evalData \u003d model.transform(...)\n\n// Coordenadas de los centroides\nval centers \u003d spark.createDataFrame(model.clusterCenters.map(Tuple1.apply)).toDF(\"features\")\n\n// Evaluación de los centroides\nval evalCenters \u003d model.transform(...)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:32:30 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540843750997_-1384258439",
+      "id": "20181029-170910_564374710",
+      "dateCreated": "Oct 29, 2018 5:09:10 PM",
+      "dateStarted": "Oct 29, 2018 5:23:00 PM",
+      "dateFinished": "Oct 29, 2018 5:23:14 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Python plotter",
+      "text": "%pyspark\n\ndef plot_clustering(nomTable\u003d\"evalData\", nomTableCenters\u003d\"\"):\n\n    import plotly as py\n    import plotly.graph_objs as go\n\n    pltWidth \u003d 800\n    pltHeight \u003d 600\n    \n    def plot(plot_dic, width\u003dpltWidth, **kwargs):\n        kwargs[\u0027output_type\u0027] \u003d \u0027div\u0027\n        plot_str \u003d py.offline.plot(plot_dic, **kwargs)\n        print(\u0027%%html \u003cdiv style\u003d\"width: %spx\"\u003e %s \u003c/div\u003e\u0027  % (width, plot_str))\n\n    pEvalData \u003d sqlContext.table(nomTable).toPandas()\n\n    if nomTableCenters:\n\n        pEvalCenters \u003d sqlContext.table(nomTableCenters).toPandas()\n\n        eData \u003d go.Scatter3d(\n            x\u003dpEvalData.x,\n            y\u003dpEvalData.y,\n            z\u003dpEvalData.z,\n            showlegend\u003dFalse,\n            mode\u003d\u0027markers\u0027,\n            marker\u003ddict(\n                size\u003d1.5,\n                color\u003dpEvalData.prediction, # set color to an array/list of desired values\n                colorscale\u003d\u0027Rainbow\u0027   # choose a colorscale\n            ),\n            opacity\u003d0.6\n        )\n\n        eCenters \u003d go.Scatter3d(\n            x\u003dpEvalCenters.x,\n            y\u003dpEvalCenters.y,\n            z\u003dpEvalCenters.z,\n            showlegend\u003dFalse,\n            mode\u003d\u0027markers\u0027,\n            marker\u003ddict(\n                size\u003d3,\n                line \u003d dict(\n                    width \u003d 1,\n                    color \u003d \u0027black\u0027\n                ),\n                symbol\u003d\u0027x\u0027,\n                color\u003dpEvalCenters.prediction, # set color to an array/list of desired values\n                colorscale\u003d\u0027Rainbow\u0027   # choose a colorscale\n            ),\n            opacity\u003d1.0\n        )\n        \n        data \u003d [eData,eCenters]\n\n        layout \u003d go.Layout(\n            title\u003d\"Clusters\",\n            width\u003dpltWidth,\n            height\u003dpltHeight\n        )\n\n    else:\n\n        eData \u003d go.Scatter3d(\n            x\u003dpEvalData.x,\n            y\u003dpEvalData.y,\n            z\u003dpEvalData.z,\n            showlegend\u003dFalse,\n            mode\u003d\u0027markers\u0027,\n            marker\u003ddict(\n                size\u003d1.5,\n                line \u003d dict(\n                    width \u003d 1,\n                    color \u003d \u0027black\u0027\n                ),\n                color\u003d\u0027cyan\u0027\n            ),\n            opacity\u003d0.8\n        )\n\n        data \u003d [eData]\n\n        layout \u003d go.Layout(\n            title\u003d\"Data\",\n            width\u003dpltWidth,\n            height\u003dpltHeight\n        )\n        \n\n    plot({\n        \"data\": data,\n        \"layout\": layout\n    })\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:23:18 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540843612020_-898299797",
+      "id": "20181029-170652_941298799",
+      "dateCreated": "Oct 29, 2018 5:06:52 PM",
+      "dateStarted": "Oct 29, 2018 5:23:18 PM",
+      "dateFinished": "Oct 29, 2018 5:23:19 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Envío de datos a Python",
+      "text": "\nval vec2ColUDF \u003d udf((x:Vector, index: Int) \u003d\u003e x(index))\n\n// Envío de datos\nevalData.select(vec2ColUDF($\"features\",lit(0)).as(\"x\"), vec2ColUDF($\"features\",lit(1)).as(\"y\"), \n                vec2ColUDF($\"features\",lit(2)).as(\"z\"), $\"prediction\")\n        .createOrReplaceTempView(\"evalData\")\n        \n// Envio de centroides\nevalCenters.select(vec2ColUDF(\u0027features,lit(0)).as(\"x\"), vec2ColUDF(\u0027features,lit(1)).as(\"y\"), \n                vec2ColUDF(\u0027features,lit(2)).as(\"z\"), \u0027prediction)\n            .createOrReplaceTempView(\"evalCenters\")\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:23:23 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540844323367_614740315",
+      "id": "20181029-171843_1954523765",
+      "dateCreated": "Oct 29, 2018 5:18:43 PM",
+      "dateStarted": "Oct 29, 2018 5:23:23 PM",
+      "dateFinished": "Oct 29, 2018 5:23:25 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Visualizacion",
+      "text": "%pyspark\nplot_clustering(nomTable\u003d\"evalData\",nomTableCenters\u003d\"evalCenters\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:23:28 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540844420292_1397643030",
+      "id": "20181029-172020_1860410103",
+      "dateCreated": "Oct 29, 2018 5:20:20 PM",
+      "dateStarted": "Oct 29, 2018 5:23:28 PM",
+      "dateFinished": "Oct 29, 2018 5:23:30 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n# Grandes Grafos Sociales\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 5:33:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eGrandes Grafos Sociales\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540845202997_-1760654543",
+      "id": "20181029-173322_44664333",
+      "dateCreated": "Oct 29, 2018 5:33:22 PM",
+      "dateStarted": "Oct 29, 2018 5:33:38 PM",
+      "dateFinished": "Oct 29, 2018 5:33:38 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Carga de datos",
+      "text": "val tweets \u003d spark.read.parquet(\"../../diplodatos_bigdata/ds/tweets.pqt\")\n\nval twitterConnections \u003d tweets\n                        .groupBy($\"user\", $\"RT_by\")\n                        .agg(sum($\"RT_times\").as(\"count_RT\"), count($\"*\").as(\"count_distinct_RT\"))\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:25:12 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540845991544_788437736",
+      "id": "20181029-174631_422522571",
+      "dateCreated": "Oct 29, 2018 5:46:31 PM",
+      "dateStarted": "Oct 30, 2018 11:25:12 AM",
+      "dateFinished": "Oct 30, 2018 11:25:39 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Grafo con los grados (degrees)",
+      "text": "import org.graphframes._\n\nval edgesDF \u003d twitterConnections.select($\"user\".as(\"src\"), $\"RT_by\".as(\"dst\"),\n                                       $\"count_RT\", $\"count_distinct_RT\")\n\nval graph \u003d GraphFrame.fromEdges(edgesDF).cache\n\nval nodesDegree \u003d graph.degrees\n\n//Cree un nuevo grafo usando los nodos con su degree disponible en nodesDegree y las aristas originales\nval degreeGraph \u003d GraphFrame(nodesDegree, graph.edges )\n// Aristas y vértices están bien particionadas\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:44:25 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540846227685_213944687",
+      "id": "20181029-175027_140182766",
+      "dateCreated": "Oct 29, 2018 5:50:27 PM",
+      "dateStarted": "Oct 30, 2018 11:25:59 AM",
+      "dateFinished": "Oct 30, 2018 11:26:04 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cálculo de Influencia Colectiva",
+      "text": "//importamos AggregateMessages\nimport org.graphframes.lib.{AggregateMessages \u003d\u003e AM}\nimport org.apache.spark.sql.DataFrame\n\n/*\nComenzamos a calcular CI: Por cada nodo calcula la sumatoria del degree-1 de sus vecinos.\nEl DataFrame sumNeighborDegrees debe tener 2 columnas: id, sum_neighbor_degree \n*/\nval msgToSrc \u003d AM.dst(\"degree\") - 1\nval msgToDst \u003d AM.src(\"degree\") - 1\nval sumNeighborDegrees \u003d degreeGraph.aggregateMessages\n  .sendToSrc(msgToSrc)  // send destination user\u0027s age to source\n  .sendToDst(msgToDst)  // send source user\u0027s age to destination\n  .agg(sum(AM.msg).as(\"sum_neighbor_degree\"))  // Hacer aggregation sobre el valor de AM.msg\n\n\n/*\nCalculamos CI: para terminar de calcular CI debemos multiplicar la sumatoria calculada en el paso anterior por el degree - 1 de \ncada nodo.\nAdemás se hace join de sumNeighborDegrees con degrees para tener todas las columnas necesarias para calcular CI.\nEl DataFrame collectiveInfluence debe tener 2 columnas: id, ci y degree\nPor ultimo ordena descendentemente por ci \n*/\nval collectiveInfluence : DataFrame \u003d nodesDegree.join(sumNeighborDegrees,\"id\")\n                          .select($\"id\", (($\"degree\" - 1)* $\"sum_neighbor_degree\").as(\"ci\"), $\"degree\")\n                          .sort($\"ci\".desc)\n                          .cache\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:26:52 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540846262168_-924714487",
+      "id": "20181029-175102_1323669680",
+      "dateCreated": "Oct 29, 2018 5:51:02 PM",
+      "dateStarted": "Oct 30, 2018 11:26:52 AM",
+      "dateFinished": "Oct 30, 2018 11:27:54 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Ejercicio ~\n\nComplete el siguiente programa para calcular el grafo de todas las posibles conexiones entre los 100 mayores influenciadores unicamente y graficar el resultado con Gephi (enviar también el archivo png generado por Gephi). \n\n### Ayuda\n* Busque en la documentación [Api Datasets](http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset) algún método que devuelva las *n* primeras files de un Dataset equivalente a la directiva SQL `LIMIT`. \n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 8:18:24 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjercicio ~\u003c/h2\u003e\n\u003cp\u003eComplete el siguiente programa para calcular el grafo de todas las posibles conexiones entre los 100 mayores influenciadores unicamente y graficar el resultado con Gephi (enviar también el archivo png generado por Gephi). \u003c/p\u003e\n\u003ch3\u003eAyuda\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003eBusque en la documentación \u003ca href\u003d\"http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset\"\u003eApi Datasets\u003c/a\u003e algún método que devuelva las \u003cem\u003en\u003c/em\u003e primeras files de un Dataset equivalente a la directiva SQL \u003ccode\u003eLIMIT\u003c/code\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540845975280_-1445445026",
+      "id": "20181029-174615_1196296701",
+      "dateCreated": "Oct 29, 2018 5:46:15 PM",
+      "dateStarted": "Oct 29, 2018 8:10:59 PM",
+      "dateFinished": "Oct 29, 2018 8:10:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// take top n\nval topInfluencers \u003d collectiveInfluence... // solo los 100 primeros\n\nimport org.apache.spark.sql.SaveMode\n\n// Guardo Vértices\ntopInfluencers.select($\"*\", $\"id\".as(\"Label\")).coalesce(1)\n    .write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"top_influencers2.csv\")\n\n\nval gTops2 \u003d GraphFrame(topInfluencers, ...)\n\nval eTops2 \u003d gTops2.find(\"...\") // Encuentre las aristas que tienen nodos\n    .select($\"e.src\".as(\"Source\"),$\"e.dst\".as(\"Target\"),$\"e.count_RT\",$\"e.count_distinct_RT\")\n\neTops2.coalesce(1)\n        .write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"top_edges2.csv\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 29, 2018 8:14:09 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540845902529_-845929619",
+      "id": "20181029-174502_510855425",
+      "dateCreated": "Oct 29, 2018 5:45:02 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Ejercicio ~\n\nComplete el siguiente programa que filtra el grafo original dejando solo los vértices que están conectados en ambas direcciones pero que no son el mismo vértice. Graficar en Gephi el resultado (enviar también el archivo png generado por Gephi).\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:40:40 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjercicio ~\u003c/h2\u003e\n\u003cp\u003eComplete el siguiente programa que filtra el grafo original dejando solo los vértices que están conectados en ambas direcciones pero que no son el mismo vértice. Graficar en Gephi el resultado (enviar también el archivo png generado por Gephi).\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540855128875_463842804",
+      "id": "20181029-201848_270799180",
+      "dateCreated": "Oct 29, 2018 8:18:48 PM",
+      "dateStarted": "Oct 30, 2018 11:39:58 AM",
+      "dateFinished": "Oct 30, 2018 11:39:58 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.sql.SaveMode\n\nval graphCI \u003d GraphFrame(collectiveInfluence, graph.edges)\n\nval e2Connected \u003d graphCI.find(...) // Motif que indique vertices en ambas direcciones\n                    .filter($\"...\" \u003d!\u003d $\"...\") // Filtrar los que son el mismo vértice\n\ne2Connected.printSchema\n\nval graph2Connected \u003d GraphFrame(e2Connected.select($\"a.*\"), e2Connected.select($\"e.*\")).cache\n\ngraph2Connected.edges\n    .select($\"src\".as(\"Source\"),$\"dst\".as(\"Target\"),$\"count_RT\",$\"count_distinct_RT\")\n    .coalesce(1).write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"edges_2_connected.csv\")\n\ngraph2Connected.vertices\n    .select($\"id\".as(\"Label\"), $\"*\")\n    .coalesce(1).write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"vertices_2_connected.csv\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:39:43 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540910150257_657955243",
+      "id": "20181030-113550_984643775",
+      "dateCreated": "Oct 30, 2018 11:35:50 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "FIN",
+      "text": "val baseDir\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\"\n\nz.put(\"baseDir\", baseDir)\nprint(\"\"\"%html\n\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\"Ejercicio\") !\u003d -1 ) {\n            j++;\n            heads[i].innerHTML \u003d inner.replace(/Ejercicio (~|\\d+)/,\"Ejercicio \"+j);\n        }\n        i++\n    }\n\u003c/script\u003e\n\"\"\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 30, 2018 11:40:23 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "tableHide": true,
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "baseDir: String \u003d https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\"Ejercicio\") !\u003d -1 ) {\n            j++;\n            heads[i].innerHTML \u003d inner.replace(/Ejercicio (~|\\d+)/,\"Ejercicio \"+j);\n        }\n        i++\n    }\n\u003c/script\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823478672_-387052902",
+      "id": "20181029-113118_2073881604",
+      "dateCreated": "Oct 29, 2018 11:31:18 AM",
+      "dateStarted": "Oct 30, 2018 11:40:23 AM",
+      "dateFinished": "Oct 30, 2018 11:40:24 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540823763622_441128113",
+      "id": "20181029-113603_407976635",
+      "dateCreated": "Oct 29, 2018 11:36:03 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Práctico (parte 2)",
+  "id": "2DT3Q3EKS",
+  "angularObjects": {
+    "2CVPMZQDC:shared_process": [],
+    "2CVZRWYXD:shared_process": [],
+    "2CXC3J873:shared_process": [],
+    "2CW9KVZFB:shared_process": [],
+    "2CWBZB5J2:shared_process": [],
+    "2CWQPZNH6:shared_process": [],
+    "2CWB7GZBS:shared_process": [],
+    "2CUMUUMCY:shared_process": [],
+    "2CX36SA9F:shared_process": [],
+    "2CVWTU38R:shared_process": [],
+    "2CVGJFNZ4:shared_process": [],
+    "2CUKDKYCE:shared_process": [],
+    "2CWDFCUCZ:shared_process": [],
+    "2CUNFHEUZ:shared_process": [],
+    "2CW49AZMR:shared_process": [],
+    "2CWE35VRJ:shared_process": [],
+    "2CWV6WPV3:shared_process": [],
+    "2CXGQWA1W:shared_process": [],
+    "2CUU3PNNG:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

@@ -1,0 +1,2314 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(s\"\"\"%html\n\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"$baseDir/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n\"\"\")",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:14:24.755",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": {},
+        "enabled": false,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658039_478254286",
+      "id": "20171010-191319_1407757246",
+      "dateCreated": "2019-11-28 19:37:38.039",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Antes de comenzar\n#### En máquina virtual\n1. Lanzar terminal\n1. Actualizar repo:\n```sh\ncd diplodatos_bigdata\ngit pull\n```\n1. Lanzar [Zeppelin](http://zeppelin.apache.org/):\n```sh\ncd\ncd spark/zeppelin-0.8.2-bin-all\n./bin/zeppelin-daemon.sh start\n```\n1. En navegador abrir [http://localhost:8080](http://localhost:8080)\n1. Seleccionar `Import note`\n1. Elegir json en `diplodatos_bigdata/clases/04_dataframes_tablas/note.json`\n2. Seleccionar `Clase 04 - Dataframes y Tablas`",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:49:41.248",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eAntes de comenzar\u003c/h3\u003e\n\u003ch4\u003eEn máquina virtual\u003c/h4\u003e\n\u003col\u003e\n  \u003cli\u003eLanzar terminal\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eActualizar repo:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd diplodatos_bigdata\ngit pull\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eLanzar \u003ca href\u003d\"http://zeppelin.apache.org/\"\u003eZeppelin\u003c/a\u003e:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd\ncd spark/zeppelin-0.8.2-bin-all\n./bin/zeppelin-daemon.sh start\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003eEn navegador abrir \u003ca href\u003d\"http://localhost:8080\"\u003ehttp://localhost:8080\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003eSeleccionar \u003ccode\u003eImport note\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eElegir json en \u003ccode\u003ediplodatos_bigdata/clases/04_dataframes_tablas/note.json\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eSeleccionar \u003ccode\u003eClase 04 - Dataframes y Tablas\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658040_-1009667342",
+      "id": "20171026-104916_1471485600",
+      "dateCreated": "2019-11-28 19:37:38.040",
+      "dateStarted": "2019-11-28 19:49:31.857",
+      "dateFinished": "2019-11-28 19:49:31.863",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n# Dataframes y Tablas (ejemplo)\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.041",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eDataframes y Tablas (ejemplo)\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658041_-1563817986",
+      "id": "20171026-103332_714148651",
+      "dateCreated": "2019-11-28 19:37:38.041",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Lectura",
+      "text": "%pyspark\n\nflightsInDF \u003d spark.read.load(\"../../diplodatos_bigdata/ds/flights.csv\",\n                    format\u003d\"csv\", header\u003dTrue, inferSchema\u003dTrue)\n           \nflightsInDF.count()\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:14:45.930",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658041_532798500",
+      "id": "20171024-111328_986579954",
+      "dateCreated": "2019-11-28 19:37:38.041",
+      "dateStarted": "2019-11-29 15:14:46.009",
+      "dateFinished": "2019-11-29 15:14:57.995",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Dataframe vuelos:",
+      "text": "%pyspark\n\nz.show(flightsInDF.limit(10))",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:15:13.678",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "DepTime": "string",
+                      "CRSDepTime": "string",
+                      "ArrTime": "string",
+                      "CRSArrTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "TailNum": "string",
+                      "ActualElapsedTime": "string",
+                      "CRSElapsedTime": "string",
+                      "AirTime": "string",
+                      "ArrDelay": "string",
+                      "DepDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "Distance": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Cancelled": "string",
+                      "CancellationCode": "string",
+                      "Diverted": "string",
+                      "CarrierDelay": "string",
+                      "WeatherDelay": "string",
+                      "NASDelay": "string",
+                      "SecurityDelay": "string",
+                      "LateAircraftDelay": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658042_-1981321706",
+      "id": "20171025-103319_281956173",
+      "dateCreated": "2019-11-28 19:37:38.042",
+      "dateStarted": "2019-11-29 15:15:13.774",
+      "dateFinished": "2019-11-29 15:15:13.962",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Descripción de columnas",
+      "text": "println(s\"\"\"%table\nCol    \\t Nombre \\t Descripción\n1  \\t  Year              \\t 1987-2008\n2  \\t  Month             \\t 1-12\n3  \\t  DayofMonth        \\t 1-31\n4  \\t  DayOfWeek         \\t 1 (Monday) - 7 (Sunday)\n5  \\t  DepTime           \\t actual departure time (local, hhmm)\n6  \\t  CRSDepTime        \\t scheduled departure time (local, hhmm)\n7  \\t  ArrTime           \\t actual arrival time (local, hhmm)\n8  \\t  CRSArrTime        \\t scheduled arrival time (local, hhmm) (CRS \u003d computer reservation system)\n9  \\t  UniqueCarrier     \\t unique carrier code\n10 \\t  FlightNum         \\t flight number\n11 \\t  TailNum           \\t plane tail number\n12 \\t  ActualElapsedTime \\t in minutes\n13 \\t  CRSElapsedTime    \\t in minutes\n14 \\t  AirTime           \\t in minutes\n15 \\t  ArrDelay          \\t arrival delay, in minutes\n16 \\t  DepDelay          \\t departure delay, in minutes\n17 \\t  Origin            \\t origin IATA airport code\n18 \\t  Dest              \\t destination IATA airport code\n19 \\t  Distance          \\t in miles\n20 \\t  TaxiIn            \\t taxi in time, in minutes\n21 \\t  TaxiOut           \\t taxi out time in minutes\n22 \\t  Cancelled           \\t was the flight cancelled?\n23 \\t  CancellationCode  \\t reason for cancellation (A \u003d carrier, B \u003d weather, C \u003d NAS, D \u003d security)\n24 \\t  Diverted          \\t 1 \u003d yes, 0 \u003d no\n25 \\t  CarrierDelay      \\t in minutes\n26 \\t  WeatherDelay      \\t in minutes\n27 \\t  NASDelay          \\t in minutes\n28 \\t  SecurityDelay     \\t in minutes\n29 \\t  LateAircraftDelay \\t in minutes\n\"\"\")",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:38:16.804",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 394.5,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Col    ": "string",
+                      " Nombre ": "string",
+                      " Descripción": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": false,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Col    \t Nombre \t Descripción\n1  \t  Year              \t 1987-2008\n2  \t  Month             \t 1-12\n3  \t  DayofMonth        \t 1-31\n4  \t  DayOfWeek         \t 1 (Monday) - 7 (Sunday)\n5  \t  DepTime           \t actual departure time (local, hhmm)\n6  \t  CRSDepTime        \t scheduled departure time (local, hhmm)\n7  \t  ArrTime           \t actual arrival time (local, hhmm)\n8  \t  CRSArrTime        \t scheduled arrival time (local, hhmm) (CRS \u003d computer reservation system)\n9  \t  UniqueCarrier     \t unique carrier code\n10 \t  FlightNum         \t flight number\n11 \t  TailNum           \t plane tail number\n12 \t  ActualElapsedTime \t in minutes\n13 \t  CRSElapsedTime    \t in minutes\n14 \t  AirTime           \t in minutes\n15 \t  ArrDelay          \t arrival delay, in minutes\n16 \t  DepDelay          \t departure delay, in minutes\n17 \t  Origin            \t origin IATA airport code\n18 \t  Dest              \t destination IATA airport code\n19 \t  Distance          \t in miles\n20 \t  TaxiIn            \t taxi in time, in minutes\n21 \t  TaxiOut           \t taxi out time in minutes\n22 \t  Cancelled           \t was the flight cancelled?\n23 \t  CancellationCode  \t reason for cancellation (A \u003d carrier, B \u003d weather, C \u003d NAS, D \u003d security)\n24 \t  Diverted          \t 1 \u003d yes, 0 \u003d no\n25 \t  CarrierDelay      \t in minutes\n26 \t  WeatherDelay      \t in minutes\n27 \t  NASDelay          \t in minutes\n28 \t  SecurityDelay     \t in minutes\n29 \t  LateAircraftDelay \t in minutes\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658043_-1368682894",
+      "id": "20181012-101759_1789633805",
+      "dateCreated": "2019-11-28 19:37:38.043",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Algunas columnas importantes",
+      "text": "%pyspark \n\nflightsInDF.select(\"UniqueCarrier\", \"FlightNum\", \"DepDelay\", \"ArrDelay\", \"Distance\").show()",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:15:27.338",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658043_1125010912",
+      "id": "20171025-104344_1016086824",
+      "dateCreated": "2019-11-28 19:37:38.043",
+      "dateStarted": "2019-11-29 15:15:27.409",
+      "dateFinished": "2019-11-29 15:15:27.561",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Esquema",
+      "text": "%pyspark\n\nflightsInDF.printSchema",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:58:56.580",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658045_566009456",
+      "id": "20171025-104149_1269548688",
+      "dateCreated": "2019-11-28 19:37:38.045",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Vuelos retrasados (\u003e 15\u0027)",
+      "text": "%pyspark\n\ndelayedDF \u003d flightsInDF.select(\"UniqueCarrier\", \"DepDelay\").filter(\"DepDelay \u003e 15\").cache()\n# Notar cache\n\ndelayedDF.show()",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:15:47.986",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658045_-1953124332",
+      "id": "20171025-105109_2146020304",
+      "dateCreated": "2019-11-28 19:37:38.045",
+      "dateStarted": "2019-11-29 15:15:48.064",
+      "dateFinished": "2019-11-29 15:15:48.501",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cantidad",
+      "text": "%pyspark\n\nprint \"Cantidad de vuelos retrasados por más de 15\u0027: \", delayedDF.count()",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 20:12:17.445",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658046_-637984573",
+      "id": "20171025-105226_241530836",
+      "dateCreated": "2019-11-28 19:37:38.046",
+      "dateStarted": "2019-11-28 20:12:17.475",
+      "dateFinished": "2019-11-28 20:12:17.507",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "User Defined Functions (UDF)",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import udf\nfrom pyspark.sql.types import IntegerType\n\n#* Función que define si un vuelo está retrasado\n#* Si el retraso es \u003e que 15\u0027 devuelve 1\n#* si no 0\n#* Si no está definida devuelve 0\n# ********************************************************/\n\ndef isDelayed(time):\n    if time \u003d\u003d \"NA\":\n        return 0 \n    elif int(time) \u003e 15: \n        return 1 \n    else:\n        return 0\n\n# UDF que define si un vuelo está retrasado\n\nisDelayedUDF \u003d udf(isDelayed, IntegerType())\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:16:20.398",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658047_-1025477163",
+      "id": "20171025-105030_1473041300",
+      "dateCreated": "2019-11-28 19:37:38.047",
+      "dateStarted": "2019-11-29 15:16:20.450",
+      "dateFinished": "2019-11-29 15:16:20.456",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Nuevo Dataframe usando UDF",
+      "text": "%pyspark\n\n# Nuevo Dataframe con algunas columnas y con una nueva indicando si el vuelo está retrasado\n\nflightsDF \u003d flightsInDF.select(\"Year\", \"Month\", \"DayofMonth\", \"DayOfWeek\", \"CRSDepTime\", \"UniqueCarrier\", \"FlightNum\", \n                    \"DepDelay\", \"ArrDelay\", \"Origin\", \"Dest\", \"TaxiIn\", \"TaxiOut\", \"Distance\",\n                    isDelayedUDF(\"DepDelay\").alias(\"IsDepDelayed\")).cache()\n\nflightsDF.show()",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:16:49.807",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658047_461695902",
+      "id": "20171025-111414_314606954",
+      "dateCreated": "2019-11-28 19:37:38.047",
+      "dateStarted": "2019-11-29 15:16:49.854",
+      "dateFinished": "2019-11-29 15:16:49.941",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Porcentaje de vuelos demorados",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import sum, count\n\npercDelayedDF \u003d flightsDF.agg((sum(\"IsDepDelayed\") * 100 / count(\"*\")).alias(\"Porcentaje de vuelos retrasados\")).cache()\n\npercDelayedDF.show()\n\nfirstRow \u003d percDelayedDF.first()\n\nporcentaje \u003d firstRow.asDict()[\"Porcentaje de vuelos retrasados\"]\n\nprint \"Porcentaje de vuelos demorados: {}%\".format(porcentaje)\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:26:39.809",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658048_-1723270434",
+      "id": "20171025-112706_588393035",
+      "dateCreated": "2019-11-28 19:37:38.048",
+      "dateStarted": "2019-11-29 15:26:39.848",
+      "dateFinished": "2019-11-29 15:26:39.935",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Promedio de Taxi-out",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import avg\n\nflightsDF.select(\"Origin\", \"Dest\", \"TaxiOut\") \\\n         .groupBy(\"Origin\", \"Dest\").agg(avg(\"TaxiOut\").alias(\"AvgTaxiOut\")) \\\n         .orderBy(\"AvgTaxiOut\", ascending\u003dFalse)\\\n         .show(10) \n         ",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:29:22.310",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658049_-1271747744",
+      "id": "20171025-113658_633059161",
+      "dateCreated": "2019-11-28 19:37:38.049",
+      "dateStarted": "2019-11-29 15:29:22.346",
+      "dateFinished": "2019-11-29 15:29:23.306",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio",
+      "text": "%md\nAveriguar el promedio de Taxi-in por origen y destino.\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.050",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eAveriguar el promedio de Taxi-in por origen y destino.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658049_1586202144",
+      "id": "20171025-132241_1506361808",
+      "dateCreated": "2019-11-28 19:37:38.049",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## SQL Plano",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.052",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eSQL Plano\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658051_1528683015",
+      "id": "20171025-132510_842210078",
+      "dateCreated": "2019-11-28 19:37:38.051",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Creación de tabla temporal",
+      "text": "%pyspark\n\nflightsDF.createOrReplaceTempView(\"flightsTbl\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:30:21.936",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658052_512374577",
+      "id": "20171025-132900_1727141453",
+      "dateCreated": "2019-11-28 19:37:38.052",
+      "dateStarted": "2019-11-29 15:30:21.982",
+      "dateFinished": "2019-11-29 15:30:22.000",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tabla vuelos",
+      "text": "%pyspark\n\nresDF \u003d spark.sql(\"SELECT * FROM flightsTbl LIMIT 10\")\n\nresDF.show()",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:30:44.291",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658053_-86622870",
+      "id": "20171025-132857_774246264",
+      "dateCreated": "2019-11-28 19:37:38.053",
+      "dateStarted": "2019-11-29 15:30:44.326",
+      "dateFinished": "2019-11-29 15:30:44.388",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tabla en interprete SQL de Zeppelin",
+      "text": "%sql\nSELECT * FROM flightsTbl LIMIT 10\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:31:11.372",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658053_1487543015",
+      "id": "20171025-163653_453163089",
+      "dateCreated": "2019-11-28 19:37:38.053",
+      "dateStarted": "2019-11-29 15:31:11.406",
+      "dateFinished": "2019-11-29 15:31:11.457",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "UDF en SQL plano",
+      "text": "%pyspark\n\nisDelayed # ya la definimos\n\n# Registración de UDF para usar con tablas\nspark.udf.register(\"isDelayedTabUDF\", isDelayed)\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:35:32.442",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658054_-802469884",
+      "id": "20171025-163805_1615588877",
+      "dateCreated": "2019-11-28 19:37:38.054",
+      "dateStarted": "2019-11-29 15:35:32.481",
+      "dateFinished": "2019-11-29 15:35:32.501",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cantidad de retrasos en llegadas por empresa",
+      "text": "%sql\n\nSELECT UniqueCarrier, SUM(isDelayedTabUDF(ArrDelay)) AS NumArrDelays FROM flightsTbl GROUP BY UniqueCarrier\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:35:52.994",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "UniqueCarrier": "string",
+                      "NumArrDelays": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658055_-242297991",
+      "id": "20171025-165217_871410176",
+      "dateCreated": "2019-11-28 19:37:38.055",
+      "dateStarted": "2019-11-29 15:35:53.041",
+      "dateFinished": "2019-11-29 15:35:53.845",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Promedio de retrasos en llegadas por empresa",
+      "text": "%sql\n\nSELECT UniqueCarrier, AVG(ArrDelay) AS AvgTimeDelay FROM flightsTbl WHERE isDelayedTabUDF(ArrDelay) \u003d\u003d 1 GROUP BY UniqueCarrier ",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:37:08.217",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/sql",
+        "editorHide": false,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "UniqueCarrier": "string",
+                      "AvgTimeDelay": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658055_-57341969",
+      "id": "20171025-170442_132724882",
+      "dateCreated": "2019-11-28 19:37:38.055",
+      "dateStarted": "2019-11-29 15:37:08.277",
+      "dateFinished": "2019-11-29 15:37:08.735",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Version con SQL programático",
+      "text": "%pyspark\n\n# Promedio de retrasos por empresa\n\nflightsDF.filter(isDelayedUDF(\"ArrDelay\") \u003d\u003d 1) \\\n    .groupBy(\"UniqueCarrier\") \\\n    .agg(avg(\"ArrDelay\")) \\\n    .show()\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:38:07.678",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658056_2136513834",
+      "id": "20171025-172031_151485458",
+      "dateCreated": "2019-11-28 19:37:38.056",
+      "dateStarted": "2019-11-29 15:38:07.711",
+      "dateFinished": "2019-11-29 15:38:08.255",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio",
+      "text": "%md\nEncontrar la distancia de vuelo promedio por empresa.",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.057",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eEncontrar la distancia de vuelo promedio por empresa.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658056_1000269303",
+      "id": "20171025-172831_878679516",
+      "dateCreated": "2019-11-28 19:37:38.056",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.057",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658057_185049543",
+      "id": "20171025-173758_910006406",
+      "dateCreated": "2019-11-28 19:37:38.057",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Retrasados y en horario por día de la semana",
+      "text": "%sql\nSELECT DayOfWeek, CASE WHEN isDelayedTabUDF(ArrDelay) \u003d 1 THEN \u0027delayed\u0027 ELSE \u0027ok\u0027 END AS Delay, COUNT(1) AS Count\nFROM flightsTbl\nGROUP BY DayOfWeek, Delay\nORDER BY DayOfWeek\n/* Graficar con barras: key\u003dDayOfWeek, Groups\u003dDelay, Values\u003dCount */",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:43:56.986",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "DayOfWeek": "string",
+                      "Delay": "string",
+                      "Count": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "DayOfWeek",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "Delay",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "Count",
+                  "index": 2.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1575052885437_81925398",
+      "id": "20191129-154125_82023760",
+      "dateCreated": "2019-11-29 15:41:25.437",
+      "dateStarted": "2019-11-29 15:43:53.957",
+      "dateFinished": "2019-11-29 15:43:54.290",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Retrasados y en horario por hora",
+      "text": "%sql\nSELECT CAST(CRSDepTime / 100 AS INT) AS Hour, CASE WHEN isDelayedTabUDF(DepDelay) \u003d 1 THEN \u0027delayed\u0027 ELSE \u0027ok\u0027 END AS Delay, COUNT(1) AS Count\nFROM flightsTbl\nGROUP BY Hour, Delay\nORDER BY Hour",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:47:48.878",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "Hour",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "Delay",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "Count",
+                  "index": 2.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1575053162154_1812471057",
+      "id": "20191129-154602_270147639",
+      "dateCreated": "2019-11-29 15:46:02.154",
+      "dateStarted": "2019-11-29 15:47:48.911",
+      "dateFinished": "2019-11-29 15:47:49.278",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## Lectura/Escritura\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.060",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eLectura/Escritura\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658059_695320706",
+      "id": "20171025-175036_627807411",
+      "dateCreated": "2019-11-28 19:37:38.059",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Guardar como archivo Orc",
+      "text": "%pyspark\n\nflightsDF.write.format(\"orc\").mode(\"overwrite\").save(\"flights.orc\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:51:24.242",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658060_-2041179133",
+      "id": "20171025-190416_1081669159",
+      "dateCreated": "2019-11-28 19:37:38.060",
+      "dateStarted": "2019-11-29 15:51:24.271",
+      "dateFinished": "2019-11-29 15:51:24.866",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Save modes",
+      "text": "println(s\"\"\"%table\nModo \\t Significado\n%html \u003ccode\u003e\"error\"\u003c/code\u003e (default) \\t Si existe se genera una excepción.\n%html \u003ccode\u003e\"append\"\u003c/code\u003e \\t Si existe se agrega al final.\n%html \u003ccode\u003e\"overwrite\"\u003c/code\u003e \\t Si existe se borra y se crea una nueva.\n%html \u003ccode\u003e\"ignore\"\u003c/code\u003e \\t Si existe no se guarda. Similar a CREATE TABLE IF NOT.\n\"\"\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:53:30.324",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 224.5,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Modo ": "string",
+                      " Significado": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": false,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Modo \t Significado\n%html \u003ccode\u003e\"error\"\u003c/code\u003e (default) \t Si existe se genera una excepción.\n%html \u003ccode\u003e\"append\"\u003c/code\u003e \t Si existe se agrega al final.\n%html \u003ccode\u003e\"overwrite\"\u003c/code\u003e \t Si existe se borra y se crea una nueva.\n%html \u003ccode\u003e\"ignore\"\u003c/code\u003e \t Si existe no se guarda. Similar a CREATE TABLE IF NOT.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658060_1734649940",
+      "id": "20171025-175211_54977094",
+      "dateCreated": "2019-11-28 19:37:38.060",
+      "dateStarted": "2019-11-29 15:53:19.756",
+      "dateFinished": "2019-11-29 15:53:20.060",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cargar desde archivo Orc",
+      "text": "%pyspark\n\ntestDF \u003d spark.read.format(\"orc\").load(\"flights.orc\")\n\ntestDF.show()\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:54:02.172",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658061_1559603065",
+      "id": "20171025-191430_1617048029",
+      "dateCreated": "2019-11-28 19:37:38.061",
+      "dateStarted": "2019-11-29 15:54:02.231",
+      "dateFinished": "2019-11-29 15:54:02.353",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Comparacion entre original y guardado",
+      "text": "%pyspark\n\nprint \"Cantidad de filas en original: \", flightsDF.count()\nprint \"Cantidad de filas en guardado: \", testDF.count()\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:06:26.034",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658062_967174806",
+      "id": "20171025-191548_1431708806",
+      "dateCreated": "2019-11-28 19:37:38.062",
+      "dateStarted": "2019-11-29 17:06:26.077",
+      "dateFinished": "2019-11-29 17:06:26.272",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tablas persistentes",
+      "text": "%md\n\n### Tablas permanentes\n\n* `createOrReplaceTempView` crea **tablas** temporales (desaparecen cuando se destruye  `SparkSession`).\n* `saveAsTable` \n    - guarda dataframes en *HiveMetastore* de forma permanente y\n    - permita utilizar SQL plano sobre ella.\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.063",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eTablas permanentes\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ccode\u003ecreateOrReplaceTempView\u003c/code\u003e crea \u003cstrong\u003etablas\u003c/strong\u003e temporales (desaparecen cuando se destruye \u003ccode\u003eSparkSession\u003c/code\u003e).\u003c/li\u003e\n  \u003cli\u003e\u003ccode\u003esaveAsTable\u003c/code\u003e\n    \u003cul\u003e\n      \u003cli\u003eguarda dataframes en \u003cem\u003eHiveMetastore\u003c/em\u003e de forma permanente y\u003c/li\u003e\n      \u003cli\u003epermita utilizar SQL plano sobre ella.\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658062_609294887",
+      "id": "20171026-090957_1006984146",
+      "dateCreated": "2019-11-28 19:37:38.062",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Guardado como tabla",
+      "text": "%pyspark\n\nflightsDF.write.format(\"orc\").mode(\"overwrite\").saveAsTable(\"flightsPermTbl\")\n\n#antes usamos\n#flightsDF.createOrReplaceTempView(\"flightsTbl\")",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:07:50.023",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658063_-861956308",
+      "id": "20171026-091847_1137183197",
+      "dateCreated": "2019-11-28 19:37:38.063",
+      "dateStarted": "2019-11-29 17:07:50.087",
+      "dateFinished": "2019-11-29 17:07:50.582",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tablas actuales",
+      "text": "%sql\nSHOW Tables\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:08:13.271",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "database": "string",
+                      "tableName": "string",
+                      "isTemporary": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658064_816893040",
+      "id": "20171026-093129_238597383",
+      "dateCreated": "2019-11-28 19:37:38.064",
+      "dateStarted": "2019-11-29 17:08:13.307",
+      "dateFinished": "2019-11-29 17:08:13.367",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT * from flightsPermTbl LIMIT 5\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:38:18.979",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Year\tMonth\tDayofMonth\tDayOfWeek\tCRSDepTime\tUniqueCarrier\tFlightNum\tDepDelay\tArrDelay\tOrigin\tDest\tTaxiIn\tTaxiOut\tDistance\tIsDepDelayed\n2008\t1\t16\t3\t1455\tWN\t1078\t0\t-13\tMCI\tLAX\t9\t15\t1363\t0\n2008\t1\t16\t3\t1200\tWN\t3600\t-5\t-21\tMCI\tLAX\t8\t11\t1363\t0\n2008\t1\t16\t3\t655\tWN\t2367\t6\t-7\tMCI\tMCO\t8\t13\t1072\t0\n2008\t1\t16\t3\t1810\tWN\t3061\t8\t23\tMCI\tMCO\t5\t32\t1072\t0\n2008\t1\t16\t3\t1240\tWN\t3689\t14\t0\tMCI\tMCO\t4\t6\t1072\t0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658064_-210594852",
+      "id": "20171026-092248_827292703",
+      "dateCreated": "2019-11-28 19:37:38.064",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Leer tabla hacia dataframe",
+      "text": "%pyspark\n\ndfFromTbl \u003d sqlContext.table(\"flightsPermTbl\")\n\ndfFromTbl.filter(\"IsDepDelayed \u003d\u003d 1\").show(5)\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:09:16.170",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658065_1061889891",
+      "id": "20171026-092522_846201378",
+      "dateCreated": "2019-11-28 19:37:38.065",
+      "dateStarted": "2019-11-29 17:09:16.205",
+      "dateFinished": "2019-11-29 17:09:16.305",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Borrar tabla",
+      "text": "%sql\nDROP TABLE flightsPermTbl\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:09:41.126",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658066_-627322098",
+      "id": "20171026-093224_52675256",
+      "dateCreated": "2019-11-28 19:37:38.066",
+      "dateStarted": "2019-11-29 17:09:41.158",
+      "dateFinished": "2019-11-29 17:09:41.615",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tablas actuales",
+      "text": "%sql\nSHOW Tables\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:09:48.217",
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "editorHide": false,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "database": "string",
+                      "tableName": "string",
+                      "isTemporary": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658067_-803166026",
+      "id": "20171026-093435_733648216",
+      "dateCreated": "2019-11-28 19:37:38.067",
+      "dateStarted": "2019-11-29 17:09:48.248",
+      "dateFinished": "2019-11-29 17:09:48.272",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio",
+      "text": "%md\nCalcular la cantidad de vuelos que parten de cada aeropuerto y guardar el resultado en una tabla permanente.\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.068",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eCalcular la cantidad de vuelos que parten de cada aeropuerto y guardar el resultado en una tabla permanente.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658068_1388775550",
+      "id": "20171026-101903_204159956",
+      "dateCreated": "2019-11-28 19:37:38.068",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Agregando nombres de empresas",
+      "text": "%pyspark\n# en carriers.csv están los nombres\ncarriersDF \u003d spark.read \\\n                .load(\"../../diplodatos_bigdata/ds/carriers.csv\", format\u003d\"csv\", header\u003dTrue, inferSchema\u003dTrue)\n\nz.show(carriersDF.limit(5))",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:19:23.195",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Code": "string",
+                      "Description": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Code": "string",
+                      "Description": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658069_1382581299",
+      "id": "20171026-102225_1262220351",
+      "dateCreated": "2019-11-28 19:37:38.069",
+      "dateStarted": "2019-11-29 17:19:21.954",
+      "dateFinished": "2019-11-29 17:19:22.063",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Join",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import col\n\nflCarrDF \u003d flightsDF.join(carriersDF, col(\"Code\") \u003d\u003d col(\"UniqueCarrier\")) \\\n                .withColumnRenamed(\"Description\",\"CarrierName\")\n\nflCarrDF.count()\nz.show(flCarrDF.limit(5))",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:27:37.310",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string",
+                      "Code": "string",
+                      "CarrierName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string",
+                      "Code": "string",
+                      "CarrierName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658070_754504820",
+      "id": "20171026-102524_704218337",
+      "dateCreated": "2019-11-28 19:37:38.070",
+      "dateStarted": "2019-11-29 17:27:35.652",
+      "dateFinished": "2019-11-29 17:27:35.946",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Join con broadcast",
+      "text": "%pyspark\n\nfrom pyspark.sql.functions import col, broadcast\n\nflCarrDF \u003d flightsDF.join(broadcast(carriersDF), col(\"Code\") \u003d\u003d col(\"UniqueCarrier\")) \\\n                .withColumnRenamed(\"Description\",\"CarrierName\")\n\nflCarrDF.count()\nz.show(flCarrDF.limit(5))\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:29:02.816",
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "editorHide": false,
+        "title": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string",
+                      "Code": "string",
+                      "CarrierName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Year": "string",
+                      "Month": "string",
+                      "DayofMonth": "string",
+                      "DayOfWeek": "string",
+                      "CRSDepTime": "string",
+                      "UniqueCarrier": "string",
+                      "FlightNum": "string",
+                      "DepDelay": "string",
+                      "ArrDelay": "string",
+                      "Origin": "string",
+                      "Dest": "string",
+                      "TaxiIn": "string",
+                      "TaxiOut": "string",
+                      "Distance": "string",
+                      "IsDepDelayed": "string",
+                      "Code": "string",
+                      "CarrierName": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658070_-622094580",
+      "id": "20181012-102820_156806349",
+      "dateCreated": "2019-11-28 19:37:38.070",
+      "dateStarted": "2019-11-29 17:29:01.344",
+      "dateFinished": "2019-11-29 17:29:01.547",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio",
+      "text": "%md\nUtilizando la información en el archivo `airports.csv` cambiar los códigos de los aeropuertos por sus nombres y agregar sus coordenadas. Hacerlo con SQL programático (usando dataframes).\n\n##### Ayuda:\n\nPuede ser útil el método `drop` que aparece en [Doc API Datasets](http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.sql.Dataset).\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.071",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eUtilizando la información en el archivo \u003ccode\u003eairports.csv\u003c/code\u003e cambiar los códigos de los aeropuertos por sus nombres y agregar sus coordenadas. Hacerlo con SQL programático (usando dataframes).\u003c/p\u003e\n\u003ch5\u003eAyuda:\u003c/h5\u003e\n\u003cp\u003ePuede ser útil el método \u003ccode\u003edrop\u003c/code\u003e que aparece en \u003ca href\u003d\"http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.sql.Dataset\"\u003eDoc API Datasets\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658071_2142241615",
+      "id": "20171026-102041_286502839",
+      "dateCreated": "2019-11-28 19:37:38.071",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Material Adicional\n\n2. [Spark SQL, DataFrames and DataSets Guide](http://spark.apache.org/docs/latest/sql-programming-guide.html)\n3. [Databricks - DataFrames and Datasets](https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 17:30:50.519",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eMaterial Adicional\u003c/h2\u003e\n\u003col\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://spark.apache.org/docs/latest/sql-programming-guide.html\"\u003eSpark SQL, DataFrames and DataSets Guide\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html\"\u003eDatabricks - DataFrames and Datasets\u003c/a\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658072_-1498318951",
+      "id": "20171026-093734_1344273786",
+      "dateCreated": "2019-11-28 19:37:38.072",
+      "dateStarted": "2019-11-29 17:30:42.965",
+      "dateFinished": "2019-11-29 17:30:42.975",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "FIN",
+      "text": "//val baseDir\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\"\nval baseDir\u003d\"https://bitbucket.org/bigdata_famaf/diplodatos_bigdata/raw/HEAD/clases\"\n\nz.put(\"baseDir\", baseDir)\nprint(\"\"\"%html\n\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\".-\") !\u003d -1 ) {\n            j++;\n            heads[i].innerHTML \u003d inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n        }\n        i++\n    }\n\u003c/script\u003e\n\"\"\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-11-29 15:14:34.315",
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": true,
+        "fontSize": 9.0
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658073_231152765",
+      "id": "20171010-191336_1667301043",
+      "dateCreated": "2019-11-28 19:37:38.073",
+      "dateStarted": "2019-11-28 19:39:17.821",
+      "dateFinished": "2019-11-28 19:39:17.991",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1575058219014_-1604875186",
+      "id": "20191129-171019_1598920105",
+      "dateCreated": "2019-11-29 17:10:19.014",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "dateUpdated": "2019-11-28 19:37:38.074",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1574980658074_2138168188",
+      "id": "20171010-192055_1187380897",
+      "dateCreated": "2019-11-28 19:37:38.074",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Diplodatos/Clase 04 - Ejemplo Dataframes y Tablas",
+  "id": "2EWRX6QH5",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

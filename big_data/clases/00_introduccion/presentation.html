@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Programación Distribuida sobre Grandes Volúmenes de Datos</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" href="theme/css/base.css">
+    <link rel="stylesheet" media="print" href="theme/css/print.css">
+    <link rel="stylesheet" media="screen, projection" href="theme/css/screen.css">
+    <link rel="stylesheet" href="theme/css/theme.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="theme/js/slides.js"></script>
+    
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: caratula.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-1">
+          <div class="inner">
+            
+            <header><h1>Programación Distribuida sobre Grandes Volúmenes de Datos</h1></header>
+            
+            
+            <section><p><br></p>
+<h2 style="text-align:center;"> Damián Barsotti  </h2>
+
+<h3 style="text-align:center;">
+    <a href="http://www.famaf.unc.edu.ar">
+    Facultad de Matemática Astronomía Física y Computación
+    </a>
+<br/>
+    <a href="http://www.unc.edu.ar">
+    Universidad Nacional de Córdoba
+    </a>
+<br/>
+    <a href="http://www.famaf.unc.edu.ar">
+    <img src="../comun/logo UNC FAMAF 2016.svg" alt="Drawing" style="width:50%;"/>
+    </a>
+</h3>
+
+<p style="font-size:15px;">
+    <br />
+        This work is licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0;vertical-align:middle;float:right" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+    </a>
+</p>
+
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="caratula.md">caratula.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-2">
+          <div class="inner">
+            
+            <header><h1>Dr. Damián Barsotti</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Docente/Investigador en la Licenciatura/Doctorado en Computación FaMAF - UNC.</li>
+<li>Docente de materia de posgrado &quot;Programación Distribuida sobre Grandes Volúmenes de Datos&quot;.</li>
+<li>Consultor empresas privadas y estado.</li>
+<li>Últimos trabajos:<ul>
+<li>Visualización de Redes de Músicos para el Festival Internacional de Jazz Córdoba (ver <a class="reference external" href="http://www.famaf.unc.edu.ar/~ilz0111/tesina/viz/">visualizaciones</a>).</li>
+<li>Using Embeddings to Predict Changes in Large Semantic Graphs. SIMBig2019.</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-3">
+          <div class="inner">
+            
+            <header><h1>Para comenzar</h1></header>
+            
+            
+            <section><h2>Material inicial</h2>
+<ul class="simple">
+<li>Bajar de repo:</li>
+</ul>
+<pre><span></span><span class="nb">cd</span>
+git clone
+  https://bigdata_famaf@bitbucket.org/bigdata_famaf/diplodatos_bigdata.git
+</pre>
+<ul>
+<li><p class="first">Abrir con navegador esta presentación en:</p>
+<p><a class="reference external" href="file:///..../diplodatos_bigdata/clases/00_introduccion/index.html">file:///..../diplodatos_bigdata/clases/00_introduccion/index.html</a></p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide slide-4">
+          <div class="inner">
+            
+            <header><h1>Introducción</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>Veremos</p>
+<ul class="simple">
+<li>Que es Big Data</li>
+<li>Problemas</li>
+<li>Soluciones</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-5">
+          <div class="inner">
+            
+            <header><h1>Curso</h1></header>
+            
+            
+            <section><h2>Contenido general</h2>
+<ul class="simple">
+<li>Parte 1 (8 hs)<ul>
+<li>Introducción a Big Data y Spark</li>
+<li>RDD's</li>
+<li>Conceptos de computación distribuida</li>
+<li>Interfáz SQL</li>
+</ul>
+</li>
+<li>Parte 2 (8 hs)<ul>
+<li>Machine Learning sobre grandes volumenes de datos</li>
+<li>Procesamiento de grandes grafos</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-6">
+          <div class="inner">
+            
+            <header><h1>Que es Big Data?</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Análisis y marketing en redes sociales?</li>
+<li>Inteligencia artificial?</li>
+<li>Ciencia de datos (data science)?</li>
+<li>Internet de las cosas (internet of things)?</li>
+</ul>
+
+<h2>Tiene que ver con cantidad de datos</h2></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-7">
+          <div class="inner">
+            
+            <header><h1>Cantidad de Datos</h1></header>
+            
+            
+            <section><!-- Hoy transmite desde sus servidores (Grid) **10GB/Seg**\ :sup:`(1)` -->
+<ul class="simple">
+<li>Colisionador de partículas CERN generó <strong>40 TB/Seg en 2012</strong>.</li>
+<li>Avión Airbus A380 genera <strong>640 TB por vuelo</strong>.</li>
+<li>Twitter genera <strong>12 TB por día</strong>.</li>
+<li>Bolsa de Nueva York genera <strong>1 TB por día</strong>.</li>
+<li>Cosechadora genera <strong>5.000 datos por hectárea</strong> en cada pasada.<ul>
+<li>En Argentina hay alrededor de <strong>30.000.000 de hectáreas</strong> cultivadas.</li>
+<li><strong>150 TB por pasada</strong>.</li>
+</ul>
+</li>
+</ul>
+<pre class="literal-block">
+Gentileza Esteban Feuerstein 2014
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>Hablemos sobre la necesidad de BigData</p>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-8">
+          <div class="inner">
+            
+            <header><h1>Jampp</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Empresa argentina mayorista de publicidad en apps de celulares</li>
+</ul>
+<img alt="orbe-meetup-ds-6.png" src="orbe-meetup-ds-6.png" style="width: 70%;" />
+<ul class="simple">
+<li>+100TB procesados por día</li>
+<li>+600TB de datos almacenados y consultados</li>
+<li>+70 instancias <strong>EMR</strong></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Otro ejemplo local</li>
+<li>Doctorado de FaMAF maneja la infrestructura</li>
+<li>Con instancias spot de Amazon</li>
+<li>Bajísima latencia en Amazon!</li>
+<li>Ver EMR</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-9">
+          <div class="inner">
+            
+            <header><h1>Foto del agujero negro</h1></header>
+            
+            
+            <section><img alt="blackhole-184.jpg" src="blackhole-184.jpg" style="width: 55%;" />
+<ul>
+<li><p class="first">5 <strong>Petabytes</strong> =  5000 Terabytes de información</p>
+<p>= mp3 de 5000 años de duración.</p>
+<img alt="blackhole-185.jpg" src="blackhole-185.jpg" style="width: 30%;" />
+<ul class="simple">
+<li>los 5 PB transportados por <strong>avión</strong></li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Telescopio de escala planetaria formado por 8 radiotelescopios</li>
+<li>Interesante problema de datos muy <strong>distribuidos</strong></li>
+<li>Problemas de velocidad de red que se veran mas adelante</li>
+<li>Media tonelada de hd</li>
+<li>shipping those drives from Hawaii to MIT works out to 14 gigabytes per second (112 gigabits per second)</li>
+<li>hd rellenos de helio para que no fallen en lugares inospitos</li>
+<li>Event Horizon Telescope (EHT)</li>
+<li>Reconstruccion de Imagen con Regularized Maximum Likelihood y Clean (deconvolucion)</li>
+<li>2 equipos RML y dos Clean</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-10">
+          <div class="inner">
+            
+            <header><h1>Nuevas Palabras</h1></header>
+            
+            
+            <section><ul>
+<li><p class="first">1 <strong>Petabyte</strong> = 1000 Terabytes</p>
+<p>= lo que CERN procesa en 1 día<sup>(1)</sup></p>
+<p>= 20 millones de archivos de 4 cajones llenos de texto</p>
+</li>
+<li><p class="first">5 <strong>Exabytes</strong> = 5000 Petabytes</p>
+<p>= todas las palabras habladas por la humanidad</p>
+</li>
+<li><p class="first">1 <strong>Zettabyte</strong> = 1000 Exabytes</p>
+</li>
+<li><p class="first">1 <strong>Yottabyte</strong> = 1000 Zetabytes</p>
+<p>(Se necesitarían aproximadamente 11,000,000,000,000 años para descargar un archivo de 1 Yottabyte)</p>
+</li>
+</ul>
+<pre class="literal-block">
+Esteban Feuerstein 2014 | (1) http://home.cern/about/computing
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>1 Terabyte = 1000 copias de la Enciclopedia Británica</li>
+<li>(10 Terabytes = toda la colección impresa de la Biblioteca del Congreso de USA)</li>
+</ul>
+<p><a class="reference external" href="http://datamining.dc.uba.ar/datamining/files/Charlas_y_Paneles/p1_efeuerstein.pdf">http://datamining.dc.uba.ar/datamining/files/Charlas_y_Paneles/p1_efeuerstein.pdf</a></p>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-11">
+          <div class="inner">
+            
+            <header><h1>Aún más palabras</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>1 <strong>Brontobyte</strong> = 1000 Yottabytes</li>
+</ul>
+<img alt="bronto-Copy.png" src="bronto-Copy.png" style="width: 70%;" />
+
+<h2>y aun más</h2>
+<ul class="simple">
+<li>1 <strong>Geopbyte</strong> = 1000 Brontobytes</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-12">
+          <div class="inner">
+            
+            <header><h1>Perspectiva</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Universo digital será de 40 Zettabytes a fines del 2020</li>
+</ul>
+<img alt="grow_digital_universe.png" src="grow_digital_universe.png" style="width: 60%;" />
+<pre class="literal-block">
+The digital Universe in 2020
+http://www.emc.com/collateral/
+  analyst-reports/idc-the-digital-universe-in-2020.pdf
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Estudio del 2012</li>
+<li>Actualmente la predicciones se han superado</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-13">
+          <div class="inner">
+            
+            <header><h1>Aún más</h1></header>
+            
+            
+            <section><img alt="grow_digital_universe-2018.png" src="grow_digital_universe-2018.png" style="width: 90%;" />
+<pre class="literal-block">
+https://www.seagate.com/files/www-content/
+  our-story/trends/files/idc-seagate-dataage-whitepaper.pdf
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Estudio del 2018</li>
+<li>Mas para el 2020</li>
+<li>2018 33 ZB</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide slide-14">
+          <div class="inner">
+            
+            <header><h1>Como procesar y almacenar tantos datos?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Problema de Infraestructura</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-15">
+          <div class="inner">
+            
+            <header><h1>Cluster de computadoras</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Muchas computadoras (nodos) en red</li>
+<li>Hardware escalable</li>
+</ul>
+<img alt="USC_Data_Center_Wiring_4.jpg" src="USC_Data_Center_Wiring_4.jpg" style="width: 80%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>No queda otra que usar muchas mauinas: no se pueden o no escala procesar todo en una máquina</li>
+<li>Hardware escalable: se pueden agregar nodos y no mover todo a una nueva máquina</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-16">
+          <div class="inner">
+            
+            <header><h1>Almacenamiento de Datos</h1></header>
+            
+            
+            <section><h2>Servidor de disco en red</h2>
+<ul class="simple">
+<li>Filers<ul>
+<li>Scale-Out NAS<sup>(1)</sup> = 50 PB</li>
+</ul>
+</li>
+<li>Se transporta datos a programas (clásico).<ul>
+<li>Modelo de programación Network Programming (MPI).</li>
+</ul>
+</li>
+<li>Problema: reduce paralelismo y <strong>red es lenta</strong>.</li>
+</ul>
+<img alt="product-shot-isilon-hd-series-600x350.jpg" src="product-shot-isilon-hd-series-600x350.jpg" style="width: 30%;" />
+<pre class="literal-block">
+(1) NAS: Network-attached storage.
+</pre></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Scale-Out NAS es la solucion mas conocida</li>
+<li>Hace 10 años que infiniband está en 50GB/s (con muy baja latencia).</li>
+<li>Veremos este fenómeno unas filminas mas adelante</li>
+<li>Otros problemas: MPI dificil de programar (tiempo de desarrollo), <strong>tolerancia a fallas</strong> o resilencia</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide slide-17">
+          <div class="inner">
+            
+            <header><h1>Puede aumentar velocidad en red? Esperamos magia tecnológica?</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-18">
+          <div class="inner">
+            
+            <header><h1>No es posible</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Ley de Kryder: <strong>densidad almacenamiento</strong> crece <strong>59%</strong> por año.</li>
+<li>Ley de Nielsen: <strong>velocidad red</strong> crece <strong>50%</strong> por año.</li>
+</ul>
+<img alt="memory_net_gap.png" src="memory_net_gap.png" style="width: 50%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <p>Leyes parecidas a ley de moore</p>
+<ul>
+<li><p class="first">Ley de Moore: procesamiento crece <strong>60%</strong> cada año</p>
+<p>(pero con techo)</p>
+<p>(o doble cada 18 mese)</p>
+</li>
+</ul>
+<p>Esto es exponencial</p>
+<p>Sacado de Storage &amp; the Mobility Gap (or, why I hate filers)</p>
+<p><a class="reference external" href="http://dev.pistoncloud.com/2013/04/storage-and-the-mobility-gap/">http://dev.pistoncloud.com/2013/04/storage-and-the-mobility-gap/</a></p>
+<p><a class="reference external" href="https://www.nngroup.com/articles/law-of-bandwidth/">https://www.nngroup.com/articles/law-of-bandwidth/</a></p>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-19">
+          <div class="inner">
+            
+            <header><h1>Alternativa a Filers</h1></header>
+            
+            
+            <section><h2>Discos locales en cada nodo</h2>
+<blockquote>
+<img alt="U2_server.jpg" src="U2_server.jpg" style="width: 25%;" />
+</blockquote>
+<ul>
+<li><dl class="first docutils">
+<dt>Distribución de datos en distintas computadoras (nodos)</dt>
+<dd><img alt="particion.png" class="first last" src="particion.png" style="width: 55%;" />
+</dd>
+</dl>
+<ul class="simple">
+<li>lectura en paralelo</li>
+</ul>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Los pedacitos de datos se llaman <em>chunks</em></li>
+<li>HD 2 veces mas lento que red <a class="reference external" href="https://gist.github.com/jboner/2841832">https://gist.github.com/jboner/2841832</a><ul>
+<li>aunque + paralelismo</li>
+</ul>
+</li>
+<li>SSD 10 veces mas rapido que red <a class="reference external" href="https://serverfault.com/questions/238417/are-networks-now-faster-than-disks">https://serverfault.com/questions/238417/are-networks-now-faster-than-disks</a></li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-20">
+          <div class="inner">
+            
+            <header><h1>Como programar</h1></header>
+            
+            
+            <section><h1>Modelo Data Flow</h1>
+<ul class="simple">
+<li>Transportar programas a datos<ul>
+<li>distribuidos en computadoras</li>
+</ul>
+</li>
+<li>Menos red!</li>
+<li>Mas paralelismo</li>
+<li>Restringir interfaces de programación (patrones)<ul>
+<li>el sistema puede hacer más cosas automáticas</li>
+</ul>
+</li>
+<li>Facilita programación paralela</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-21">
+          <div class="inner">
+            
+            <header><h1>Implementación</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Se escribe programa <strong>declarativo</strong></li>
+<li>Paralelización automática</li>
+<li>El sistema elige como dividir las operaciones en <strong>tareas</strong> y <strong>donde correrlas</strong><ul>
+<li>Gestor de clusters: Hadoop Yarn, Apache Mesos, Amazon EC2.</li>
+</ul>
+</li>
+<li>Tolerancia a fallos: replicación de tareas</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Donde correrlas --&gt; se transporta programas a datos</li>
+<li>Declarativo: se dice el que no el como</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-22">
+          <div class="inner">
+            
+            <header><h1>Mejora</h1></header>
+            
+            
+            <section><h2>Replicación de Datos</h2>
+<ul class="simple">
+<li>Varias copias del pedacito de dato (chunk)</li>
+</ul>
+<img alt="particion_replicacion.png" src="particion_replicacion.png" style="width: 55%;" />
+<ul class="simple">
+<li>Datos más cerca de los programas</li>
+<li>Menos red! (mayor localidad de datos)</li>
+<li>Tolerancia a fallos</li>
+<li>Ej: Hadoop File System (HDFS), Google File System (GFS)</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>FS distribuido</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-23">
+          <div class="inner">
+            
+            <header><h1>MapReduce</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Ejemplo canónico de Data Flow Programming</li>
+</ul>
+<img alt="index-auto-0007-0001.gif" src="index-auto-0007-0001.gif" style="width: 70%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-24">
+          <div class="inner">
+            
+            <header><h1>Word Count con MR</h1></header>
+            
+            
+            <section><img alt="word-count.png" src="word-count.png" style="width: 100%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-25">
+          <div class="inner">
+            
+            <header><h1>Aplicaciones MR</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Page Rank</li>
+<li>Distributed grep</li>
+<li>Distributed sort</li>
+<li>Web link-graph reversal</li>
+<li>Inverted index construction</li>
+<li><dl class="first docutils">
+<dt><strong>Machine Learning</strong></dt>
+<dd><ul class="first last">
+<li>Logistic Regresion, Random Forest, K-means, ...</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Backend SQL para Data Warehouse</strong></dt>
+<dd><ul class="first last">
+<li>Apache Hive.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Apache Hive = Amazon Redshift.</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-26">
+          <div class="inner">
+            
+            <header><h1>Limitaciones de MR</h1></header>
+            
+            
+            <section><ul>
+<li><p class="first">No es bueno para algoritmos iterativos</p>
+<blockquote>
+<ul class="simple">
+<li>muchos MR.</li>
+<li>page Rank, descenso por el gradiente, clustering, etc. (la mayoría)</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Primitivas poco eficientes para compartir datos</p>
+<blockquote>
+<ul class="simple">
+<li>datos entre iteraciones en FS distribuido</li>
+<li>lento por uso de disco y replicación</li>
+</ul>
+</blockquote>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-27">
+          <div class="inner">
+            
+            <header><h1>Ejemplo: Page Rank</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Multiplica matriz rala por vector muchas veces</li>
+<li>Recrea hash de neighbors y ranks</li>
+</ul>
+<img alt="page_rank.png" src="page_rank.png" style="width: 100%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-28">
+          <div class="inner">
+            
+            <header><h1>Problema</h1></header>
+            
+            
+            <section><h2>+iteraciones = + I/O</h2>
+<img alt="iter_app.png" src="iter_app.png" style="width: 100%;" />
+<ul class="simple">
+<li>90% del tiempo haciendo I/O</li>
+<li>Solución: Spark = MR++ en memoria</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              28/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-29">
+          <div class="inner">
+            
+            <header><h1>Implementación Spark</h1></header>
+            
+            
+            <section><ul>
+<li><p class="first">Patrones como <strong>grafo de operaciones</strong> de alto nivel</p>
+<ul class="simple">
+<li>relación <strong>temporal</strong> entre operaciones (map, reduce, filter, join, etc.)</li>
+</ul>
+<img alt="execution-graph.png" src="execution-graph.png" style="width: 70%;" />
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              29/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-30">
+          <div class="inner">
+            
+            <header><h1>Historia</h1></header>
+            
+            
+            <section><img alt="historia.jpg" src="historia.jpg" style="width: 100%;" /></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              30/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-31">
+          <div class="inner">
+            
+            <header><h1>Areas del Big Data</h1></header>
+            
+            
+            <section><h2>- Analitics (datos estructurados)</h2>
+
+
+<h2>- Machine Learning</h2>
+
+
+<h2>- Análisis de Redes (grandes grafos)</h2>
+
+
+<h2>- Streaming (real time)</h2>
+
+
+<h2>- Visualización</h2>
+<ul class="simple">
+<li>Herramientas: Pig, Cascading, Storm, Flink, Zeppelin, <strong>Spark</strong></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+              <ul class="simple">
+<li>Streaming en big data lo hace Jampp</li>
+<li>Pig, Cascading, Storm, Flink son ejemplos de data flow programming</li>
+<li>Pig, Cascading: Patrones de programación de + alto nivel implementados en MR</li>
+<li>Storm, Flink: Similar a MR pero para procesar streams en real time</li>
+</ul>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              31/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-32">
+          <div class="inner">
+            
+            <header><h1>Curso</h1></header>
+            
+            
+            <section><h2>Material</h2>
+<ul>
+<li><p class="first">En git:</p>
+<pre><span></span><span class="nb">cd</span> diplodatos_bigdata
+git pull
+</pre>
+</li>
+<li><p class="first"><a class="reference external" href="https://cs.famaf.unc.edu.ar/~damian/tmp/bib/">https://cs.famaf.unc.edu.ar/~damian/tmp/bib/</a></p>
+</li>
+</ul>
+
+
+<h2>Metodología</h2>
+<ul>
+<li><p class="first">Taller interactivo con <strong>Notebooks</strong> <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> y ejercicios en clase:</p>
+<pre><span></span><span class="nb">cd</span> diplodatos_bigdata/clases
+ls
+</pre>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              32/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-33">
+          <div class="inner">
+            
+            <header><h1>Curso</h1></header>
+            
+            
+            <section><ul>
+<li><p class="first">Prácticos en <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> a entregar al finalizar cada parte.</p>
+</li>
+<li><p class="first">Consultas y comunicacion general en <a class="reference external" href="https://diplodatos2019.slack.com">Slack</a></p>
+<blockquote>
+<ul class="simple">
+<li>Channel <strong>bigdata</strong></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+
+<h2>Requerimiento</h2>
+<ul class="simple">
+<li>Notebook personales &gt;= 4GB Ram o nabucodonosor (cuenta)</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              33/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-34">
+          <div class="inner">
+            
+            <header><h1>Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en tu notebook</h1></header>
+            
+            
+            <section><ul>
+<li><p class="first">Bajarlo y descomprimir:</p>
+<pre><span></span><span class="nb">cd</span>
+wget http://cs.famaf.unc.edu.ar/~damian/tmp/bigdatasoft.tgz
+tar -xzvf bigdatasoft.tgz
+</pre>
+<ul class="simple">
+<li>Nota: hay que tener instalado <strong>Java 8</strong> y <strong>Python 2</strong>.</li>
+</ul>
+</li>
+<li><p class="first">Ejecutar</p>
+<pre><span></span><span class="nb">cd</span> spark/zeppelin-0.8.2-bin-all
+bin/zeppelin.sh
+</pre>
+</li>
+<li><p class="first">En navegador abrir <a class="reference external" href="http://localhost:9153">http://localhost:9153</a></p>
+</li>
+<li><p class="first">Seleccionar &quot;Import note&quot; y elegir json en repo git:</p>
+<pre><span></span>diplodatos_bigdata/clases/01_intro_spark/note.json
+</pre>
+</li>
+<li><p class="first">Seleccionar &quot;Clase 01 - Introducción a Spark&quot;</p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              34/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-35">
+          <div class="inner">
+            
+            <header><h1>Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en nabucodonosor</h1></header>
+            
+            
+            <section><ul class="simple">
+<li>Hacer ssh a mi cuenta en nabucodonosor</li>
+<li>Bajarlo y descomprimir (idem)</li>
+<li>Cambiar puerto</li>
+</ul>
+<pre><span></span><span class="nb">echo</span> $<span class="o">[</span><span class="nv">$UID</span>+8080<span class="o">]</span> <span class="c1"># recordar nuevo puerto (anotarlo)</span>
+<span class="nb">cd</span> spark/zeppelin-0.7.3-bin-all/conf
+sed <span class="s2">&quot;s/&lt;value&gt;8080/&lt;value&gt;</span>$<span class="s2">[</span><span class="nv">$UID</span><span class="s2">+8080]/&quot;</span> zeppelin-site.xml.template &gt; zeppelin-site.xml
+</pre>
+<ul>
+<li><p class="first">Ejecutar</p>
+<pre><span></span><span class="nb">cd</span> ..
+bin/zeppelin.sh
+</pre>
+</li>
+<li><p class="first">continua ...</p>
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              35/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide has_footer slide-36">
+          <div class="inner">
+            
+            <header><h1>Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en nabucodonosor</h1></header>
+            
+            
+            <section><h2>(continuación)</h2>
+<p>En tu maquina:</p>
+<ul class="simple">
+<li>En terminal hacer port forwarding de ssh:</li>
+</ul>
+<pre><span></span>ssh -vCN -L <span class="m">8080</span>:localhost:&lt;nuevo puerto&gt; <span class="se">\</span>
+      -l &lt;login en nabuco&gt; nabucodonosor.ccad.unc.edu.ar
+</pre>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>En navegador abrir</dt>
+<dd><a class="reference external" href="http://localhost:8080">http://localhost:8080</a></dd>
+</dl>
+</li>
+<li>Abrir notebook (idem)</li>
+</ul>
+<p>Nota: Para windows leer instrucciones en <a class="reference external" href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-linux-ambari-ssh-tunnel">https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-linux-ambari-ssh-tunnel</a></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              36/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: presentation.rst -->
+      <div class="slide-wrapper">
+        <div class="slide slide-37">
+          <div class="inner">
+            
+            <header><h1>Seguimos con notebook</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+              Programación Distribuida sobre Grandes Volúmenes de Datos | Damián Barsotti | FaMAF - UNC
+            
+            
+            <aside class="source">
+              Source: <a href="presentation.rst">presentation.rst</a>
+            </aside>
+            
+            <aside class="page_number">
+              37/37
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide:1">Programación Distribuida sobre Grandes Volúmenes de Datos</a></th>
+        <td><a href="#slide:1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide:2">Dr. Damián Barsotti</a></th>
+        <td><a href="#slide:2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide:3">Para comenzar</a></th>
+        <td><a href="#slide:3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide:4">Introducción</a></th>
+        <td><a href="#slide:4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide:5">Curso</a></th>
+        <td><a href="#slide:5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide:6">Que es Big Data?</a></th>
+        <td><a href="#slide:6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide:7">Cantidad de Datos</a></th>
+        <td><a href="#slide:7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide:8">Jampp</a></th>
+        <td><a href="#slide:8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide:9">Foto del agujero negro</a></th>
+        <td><a href="#slide:9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide:10">Nuevas Palabras</a></th>
+        <td><a href="#slide:10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide:11">Aún más palabras</a></th>
+        <td><a href="#slide:11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide:12">Perspectiva</a></th>
+        <td><a href="#slide:12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide:13">Aún más</a></th>
+        <td><a href="#slide:13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide:14">Como procesar y almacenar tantos datos?</a></th>
+        <td><a href="#slide:14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide:15">Cluster de computadoras</a></th>
+        <td><a href="#slide:15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide:16">Almacenamiento de Datos</a></th>
+        <td><a href="#slide:16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide:17">Puede aumentar velocidad en red? Esperamos magia tecnológica?</a></th>
+        <td><a href="#slide:17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide:18">No es posible</a></th>
+        <td><a href="#slide:18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide:19">Alternativa a Filers</a></th>
+        <td><a href="#slide:19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide:20">Como programar</a></th>
+        <td><a href="#slide:20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide:21">Implementación</a></th>
+        <td><a href="#slide:21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide:22">Mejora</a></th>
+        <td><a href="#slide:22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide:23">MapReduce</a></th>
+        <td><a href="#slide:23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide:24">Word Count con MR</a></th>
+        <td><a href="#slide:24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide:25">Aplicaciones MR</a></th>
+        <td><a href="#slide:25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide:26">Limitaciones de MR</a></th>
+        <td><a href="#slide:26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-27">
+        <th><a href="#slide:27">Ejemplo: Page Rank</a></th>
+        <td><a href="#slide:27">27</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-28">
+        <th><a href="#slide:28">Problema</a></th>
+        <td><a href="#slide:28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide:29">Implementación Spark</a></th>
+        <td><a href="#slide:29">29</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-30">
+        <th><a href="#slide:30">Historia</a></th>
+        <td><a href="#slide:30">30</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-31">
+        <th><a href="#slide:31">Areas del Big Data</a></th>
+        <td><a href="#slide:31">31</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-32">
+        <th><a href="#slide:32">Curso</a></th>
+        <td><a href="#slide:32">32</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-33">
+        <th><a href="#slide:33">Curso</a></th>
+        <td><a href="#slide:33">33</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-34">
+        <th><a href="#slide:34">Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en tu notebook</a></th>
+        <td><a href="#slide:34">34</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-35">
+        <th><a href="#slide:35">Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en nabucodonosor</a></th>
+        <td><a href="#slide:35">35</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-36">
+        <th><a href="#slide:36">Usar <a class="reference external" href="http://zeppelin.apache.org/">Zeppelin</a> en nabucodonosor</a></th>
+        <td><a href="#slide:36">36</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-37">
+        <th><a href="#slide:37">Seguimos con notebook</a></th>
+        <td><a href="#slide:37">37</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+    <br>
+    <strong>Generated with Darkslide 4.0.1</strong>
+  </div>
+  <script>main()</script>
+</body>
+</html>

@@ -1,0 +1,2103 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(s\"\"\"%html\n\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"$baseDir/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n\"\"\")",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:31:27 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306705_1947247510",
+      "id": "20160817-081203_553106990",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:31:16 PM",
+      "dateFinished": "Oct 16, 2018 8:31:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n\n# Tutorial Scala\n\nEste tutorial de [Scala](https://www.scala-lang.org/) ayudará a entender los conceptos básicos para programar en este lenguaje.\nSe presentarán los temas con la posibilidad de ejecutar y modificar los ejemplos en la misma página de lectura para que puedas probar y familiarizarte con el lenguaje.\n\n#### Uso del notebook\n\n* Para ejecutar los programa presiona **[`Shift`]-[`Enter`]** o cliquea en el triangulito arriba a la derecha de cada celda.\n* Para hacer copy and paste desde el notebook selecciona con **[`Ctrl`]-[*flechitas*]** y hacer **[`Ctrl`]-[`c`]** y **[`Ctrl`]-[`v`]**.",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:41:21 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eTutorial Scala\u003c/h1\u003e\n\u003cp\u003eEste tutorial de \u003ca href\u003d\"https://www.scala-lang.org/\"\u003eScala\u003c/a\u003e ayudará a entender los conceptos básicos para programar en este lenguaje.\u003cbr/\u003eSe presentarán los temas con la posibilidad de ejecutar y modificar los ejemplos en la misma página de lectura para que puedas probar y familiarizarte con el lenguaje.\u003c/p\u003e\n\u003ch4\u003eUso del notebook\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003ePara ejecutar los programa presiona \u003cstrong\u003e[\u003ccode\u003eShift\u003c/code\u003e]-[\u003ccode\u003eEnter\u003c/code\u003e]\u003c/strong\u003e o cliquea en el triangulito arriba a la derecha de cada celda.\u003c/li\u003e\n  \u003cli\u003ePara hacer copy and paste desde el notebook selecciona con \u003cstrong\u003e[\u003ccode\u003eCtrl\u003c/code\u003e]-[\u003cem\u003eflechitas\u003c/em\u003e]\u003c/strong\u003e y hacer \u003cstrong\u003e[\u003ccode\u003eCtrl\u003c/code\u003e]-[\u003ccode\u003ec\u003c/code\u003e]\u003c/strong\u003e y \u003cstrong\u003e[\u003ccode\u003eCtrl\u003c/code\u003e]-[\u003ccode\u003ev\u003c/code\u003e]\u003c/strong\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306718_1943784770",
+      "id": "20160817-081320_1105843555",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:35:34 PM",
+      "dateFinished": "Oct 16, 2018 8:35:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n \n## ~.- Características Principales del Lenguaje",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:40:55 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Características Principales del Lenguaje\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306719_1943400021",
+      "id": "20160817-081732_753026246",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:37:06 PM",
+      "dateFinished": "Oct 16, 2018 8:37:06 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Características Principales",
+      "text": "%md \n- [Scala](https://www.scala-lang.org/) (**Scala**lable language) es un lenguaje desarrollado desde 2001 en el Programming Methods Laboratory de la EPFL bajo la dirección de [Martin Odersky](https://en.wikipedia.org/wiki/Martin_Odersky).\n\n- Fue diseñado con el objetivo de escribir programas que corran en JVM de forma compacta y sintética (en contraposición a Java) sin perder eficiencia.\n\n- Combina conceptos de programación funcional y programación orientada a objetos en un lenguaje con **[tipado estático](http://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages)**.\n\n- **Es** un lenguaje orientado a objetos puro (como Smalltalk) en el cual todo valor es un objeto y toda operación es una llamada a un método.\n\n- **No** es un lenguaje funcional puro (como Haskell) que fuerza a programar en un estilo funcional. \n\n-  Es un híbrido imperativo/funcional que permite programar en un estilo imperativo, aunque sugiere adoptar un estilo funcional.\n\n- Corre en la plataforma  JAVA e interopera con todas las librerías JAVA.\n\n- Bibliografía recomendada: \n    - **[Programming in Scala](http://booksites.artima.com/programming_in_scala_3ed)** (Martin Odersky, Lex Spoon, and Bill Venners) \n    - **[Documentación Oficial de Scala](http://www.scala-lang.org/documentation/)**\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 9:13:21 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\u003ca href\u003d\"https://www.scala-lang.org/\"\u003eScala\u003c/a\u003e (**Scala**lable language) es un lenguaje desarrollado desde 2001 en el Programming Methods Laboratory de la EPFL bajo la dirección de \u003ca href\u003d\"https://en.wikipedia.org/wiki/Martin_Odersky\"\u003eMartin Odersky\u003c/a\u003e.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eFue diseñado con el objetivo de escribir programas que corran en JVM de forma compacta y sintética (en contraposición a Java) sin perder eficiencia.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eCombina conceptos de programación funcional y programación orientada a objetos en un lenguaje con \u003cstrong\u003e\u003ca href\u003d\"http://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages\"\u003etipado estático\u003c/a\u003e\u003c/strong\u003e.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003e\u003cstrong\u003eEs\u003c/strong\u003e un lenguaje orientado a objetos puro (como Smalltalk) en el cual todo valor es un objeto y toda operación es una llamada a un método.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003e\u003cstrong\u003eNo\u003c/strong\u003e es un lenguaje funcional puro (como Haskell) que fuerza a programar en un estilo funcional. \u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEs un híbrido imperativo/funcional que permite programar en un estilo imperativo, aunque sugiere adoptar un estilo funcional.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eCorre en la plataforma JAVA e interopera con todas las librerías JAVA.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eBibliografía recomendada: \u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003e\u003cstrong\u003e\u003ca href\u003d\"http://booksites.artima.com/programming_in_scala_3ed\"\u003eProgramming in Scala\u003c/a\u003e\u003c/strong\u003e (Martin Odersky, Lex Spoon, and Bill Venners)\u003c/li\u003e\n      \u003cli\u003e\u003cstrong\u003e\u003ca href\u003d\"http://www.scala-lang.org/documentation/\"\u003eDocumentación Oficial de Scala\u003c/a\u003e\u003c/strong\u003e\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306721_1928779563",
+      "id": "20160703-233826_1193307973",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 9:13:15 PM",
+      "dateFinished": "Oct 16, 2018 9:13:15 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Variables",
+      "text": "%md \n\n## ~.- Variables",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:47:00 PM",
+      "config": {
+        "tableHide": false,
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Variables\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306722_1929933809",
+      "id": "20160817-002635_1001761052",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:39:46 PM",
+      "dateFinished": "Oct 16, 2018 8:39:46 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "",
+      "text": "%md\n- [Scala](https://www.scala-lang.org/) tiene dos tipos de variables: `vars` y `vals`.\n\n- Un variable `val` (a veces llamada directamente `valor`) es inmutable y no puede ser reasignada una vez inicializada.\n\t \n- Una variable `var`, por el contrario, es mutable y puede ser reasignada.\n\n---\n - El tipo de una variable se especifica luego del nombre de la misma separado por `:` (e.g.:`var x : \u003ctype\u003e`)\n \n - El compilador `scala` hace **inferencia de tipos** por lo cual se pueden evitar las anotaciones de tipos.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:46:26 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 492.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003e\u003ca href\u003d\"https://www.scala-lang.org/\"\u003eScala\u003c/a\u003e tiene dos tipos de variables: \u003ccode\u003evars\u003c/code\u003e y \u003ccode\u003evals\u003c/code\u003e.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eUn variable \u003ccode\u003eval\u003c/code\u003e (a veces llamada directamente \u003ccode\u003evalor\u003c/code\u003e) es inmutable y no puede ser reasignada una vez inicializada.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eUna variable \u003ccode\u003evar\u003c/code\u003e, por el contrario, es mutable y puede ser reasignada.\u003c/p\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003chr/\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003eEl tipo de una variable se especifica luego del nombre de la misma separado por \u003ccode\u003e:\u003c/code\u003e (e.g.:\u003ccode\u003evar x : \u0026lt;type\u0026gt;\u003c/code\u003e)\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEl compilador \u003ccode\u003escala\u003c/code\u003e hace \u003cstrong\u003einferencia de tipos\u003c/strong\u003e por lo cual se pueden evitar las anotaciones de tipos.\u003c/p\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306723_1929549061",
+      "id": "20160704-210357_412606283",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:46:18 PM",
+      "dateFinished": "Oct 16, 2018 8:46:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Probemos las siguientes asignaciones de variables",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 8:48:28 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eProbemos las siguientes asignaciones de variables\u003c/h3\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539733629407_1665314101",
+      "id": "20181016-204709_1048515058",
+      "dateCreated": "Oct 16, 2018 8:47:09 PM",
+      "dateStarted": "Oct 16, 2018 8:47:51 PM",
+      "dateFinished": "Oct 16, 2018 8:47:51 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Variables VAL",
+      "text": "//¿funciona?\nval x:Int \u003d 2\nx \u003d 3",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:44:26 PM",
+      "config": {
+        "tableHide": false,
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306725_1927240567",
+      "id": "20160704-213534_1142623231",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:44:04 PM",
+      "dateFinished": "Oct 16, 2018 11:44:04 PM",
+      "status": "ERROR",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Variables VAR",
+      "text": "//¿funciona?\nvar x:Int \u003d 2\nx \u003d 3",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:44:34 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306726_1928394814",
+      "id": "20160704-213754_1736162540",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:44:34 PM",
+      "dateFinished": "Oct 16, 2018 11:44:35 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Inferencia de Tipos",
+      "text": "//¿que tipos tienen las variables?\nval x \u003d 2\nval y \u003d \"Scala!\"\nval z \u003d List(1,2,3)",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:44:56 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306726_1928394814",
+      "id": "20160704-214246_1274038938",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:44:56 PM",
+      "dateFinished": "Oct 16, 2018 11:44:57 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Function Literals",
+      "text": "%md \n\n## ~.- Funciones anónimas\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 9:02:49 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Funciones anónimas\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306734_1925316823",
+      "id": "20160817-010628_484969835",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 8:58:18 PM",
+      "dateFinished": "Oct 16, 2018 8:58:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Function Literals",
+      "text": "%md \n\n- Una **función anónima** (o literal de función o simplemente función) se define especificando una lista de parámetros entre paréntesis, el símbolo `\u003d\u003e`y el cuerpo de la función.\n- Si el cuerpo del literal de función contiene más de una sentencia se puede definir el cuerpo entre llaves. `{ \u003cbody\u003e }`\n\n- Una función anónima puede ser asignada a una variable (ver ejemplo más abajo)\n \n- Una función anónima se puede definir de forma concisa y abreviada de la siguiente forma:\n\t- Omitiendo el tipo de los parámetros \n\t- Omitiendo los paréntesis.\n\t- Usando `_` como placeholder para uno o más parámetros.\n\t- Múltiples `_` implican múltiples parámetros, no la reutilización de un",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:45:17 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eUna \u003cstrong\u003efunción anónima\u003c/strong\u003e (o literal de función o simplemente función) se define especificando una lista de parámetros entre paréntesis, el símbolo \u003ccode\u003e\u003d\u0026gt;\u003c/code\u003ey el cuerpo de la función.\u003c/li\u003e\n  \u003cli\u003eSi el cuerpo del literal de función contiene más de una sentencia se puede definir el cuerpo entre llaves. \u003ccode\u003e{ \u0026lt;body\u0026gt; }\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eUna función anónima puede ser asignada a una variable (ver ejemplo más abajo)\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n    \u003cp\u003eUna función anónima se puede definir de forma concisa y abreviada de la siguiente forma:\u003c/p\u003e\n    \u003cul\u003e\n      \u003cli\u003eOmitiendo el tipo de los parámetros\u003c/li\u003e\n      \u003cli\u003eOmitiendo los paréntesis.\u003c/li\u003e\n      \u003cli\u003eUsando \u003ccode\u003e_\u003c/code\u003e como placeholder para uno o más parámetros.\u003c/li\u003e\n      \u003cli\u003eMúltiples \u003ccode\u003e_\u003c/code\u003e implican múltiples parámetros, no la reutilización de un\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306735_1924932074",
+      "id": "20160816-235432_58239161",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 9:09:32 PM",
+      "dateFinished": "Oct 16, 2018 9:09:32 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Variantes sintácticas",
+      "text": "val someNumbers \u003d List(-2, -1, 0, 1, 2)\n\n//¿retornan lo mismo?\nsomeNumbers.filter((x: Int) \u003d\u003e x \u003e 0)\nsomeNumbers.filter((x) \u003d\u003e x \u003e 0)\nsomeNumbers.filter(x \u003d\u003e x \u003e 0)\nsomeNumbers.filter(_ \u003e 0)\n\n//¿porque funciona esto?\nsomeNumbers.fold(0)(_+_)",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:45:22 PM",
+      "config": {
+        "tableHide": false,
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306736_1935320294",
+      "id": "20160816-235858_384188929",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:45:22 PM",
+      "dateFinished": "Oct 16, 2018 11:45:25 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Definición de función anónima",
+      "text": "//¿que tipos retornan?\nvar increase \u003d (x: Int) \u003d\u003e x + 1\nvar sum \u003d (x: Int, y: Int) \u003d\u003e x + y",
+      "dateUpdated": "Oct 16, 2018 11:45:51 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306736_1935320294",
+      "id": "20160816-235521_448466848",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Funciones",
+      "text": "%md \n\n## ~.- Métodos",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:24:08 PM",
+      "config": {
+        "tableHide": false,
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Métodos\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306728_1926086320",
+      "id": "20160816-205355_75257690",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:24:01 PM",
+      "dateFinished": "Oct 16, 2018 11:24:01 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "",
+      "text": "%md\n\n\n - La definición de un método comienza con la palabra clave `def` seguida por el nombre de la función y por una lista de los parámetros entre paréntesis.\n \n - Una anotación de tipo debe seguir a cada parámetro ya que el compilador no hace inferencia sobre los tipos de los parámetros.\n \n - Opcionalmente se puede indicar explícitamente el tipo que retorna la función luego de la lista de parámetros. Si no se indica el tipo, el compilador lo inferirá.\n \n- El cuerpo de un método está delimitado por llaves  `{ \u003cbody\u003e }`. Si el método solo contiene una sentencia, se pueden omitir las llaves. \n\n- Por defecto, un método retorna el valor de la última expresión en su cuerpo y se puede omitir la palabra clave `return`. \n\n- Si se usa `return` hay que definir el tipo devuelto. \n\n- Un método que retorna `Unit` no retorna un valor interesante y solo se ejecuta por sus efectos secundarios. `Unit` es el equivalente a `void` en C y Java. \n\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:55:44 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 95.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\n  \u003cp\u003eLa definición de un método comienza con la palabra clave \u003ccode\u003edef\u003c/code\u003e seguida por el nombre de la función y por una lista de los parámetros entre paréntesis.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eUna anotación de tipo debe seguir a cada parámetro ya que el compilador no hace inferencia sobre los tipos de los parámetros.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eOpcionalmente se puede indicar explícitamente el tipo que retorna la función luego de la lista de parámetros. Si no se indica el tipo, el compilador lo inferirá.\u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eEl cuerpo de un método está delimitado por llaves \u003ccode\u003e{ \u0026lt;body\u0026gt; }\u003c/code\u003e. Si el método solo contiene una sentencia, se pueden omitir las llaves. \u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003ePor defecto, un método retorna el valor de la última expresión en su cuerpo y se puede omitir la palabra clave \u003ccode\u003ereturn\u003c/code\u003e. \u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eSi se usa \u003ccode\u003ereturn\u003c/code\u003e hay que definir el tipo devuelto. \u003c/p\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eUn método que retorna \u003ccode\u003eUnit\u003c/code\u003e no retorna un valor interesante y solo se ejecuta por sus efectos secundarios. \u003ccode\u003eUnit\u003c/code\u003e es el equivalente a \u003ccode\u003evoid\u003c/code\u003e en C y Java.\u003c/p\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306728_1926086320",
+      "id": "20160816-204514_471265966",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:55:32 PM",
+      "dateFinished": "Oct 16, 2018 11:55:32 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Definición de Función",
+      "text": "def max(x: Int, y: Int) : Int \u003d {\n\tif (x \u003e y)\n\t\tx\n\telse\n\t\ty\n}",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:47:56 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306729_1925701572",
+      "id": "20160816-204813_1453918901",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:47:57 PM",
+      "dateFinished": "Oct 16, 2018 11:47:57 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Definición omitiendo el tipo que se retorna",
+      "text": "//¿que tipo retorna?\ndef max(x: Int, y: Int) \u003d {\n\tif (x \u003e y)\n\t\tx\n\telse\n\t\ty\n}",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:48:05 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306731_1926471069",
+      "id": "20160816-205216_1228789597",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:48:05 PM",
+      "dateFinished": "Oct 16, 2018 11:48:05 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Definición sin especificación de tipos de los Parametros",
+      "text": "//¿funciona?\ndef min(x, y) \u003d {\n\tif (x \u003e y)\n\t\tx\n\telse\n\t\ty\n}\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:48:12 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306730_1926855818",
+      "id": "20160816-205047_1696755979",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:48:12 PM",
+      "dateFinished": "Oct 16, 2018 11:48:12 PM",
+      "status": "ERROR",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Uso del Return",
+      "text": "//¿que retorna?\ndef max2(x: Int, y: Int) : Int \u003d {\n\tif (x \u003e y)\n\t\treturn x\n\telse\n\t\treturn y\n}",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:56:18 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306733_1924162576",
+      "id": "20160816-205304_1477244175",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:56:02 PM",
+      "dateFinished": "Oct 16, 2018 11:56:02 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Nro. de parámetros variable",
+      "text": "//¿funciona?\ndef echo(args: String*) \u003d\n    for (arg \u003c- args) println(arg)\n\necho(\"hola\")\necho(\"hola\", \"chau\")\n//parámetros nombrados.\n\n//parámetros por defecto.",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:50:32 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306733_1924162576",
+      "id": "20160816-234315_448901351",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:50:32 PM",
+      "dateFinished": "Oct 16, 2018 11:50:33 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Omitiendo las llaves",
+      "text": "//¿que tipo retorna?\ndef square(x: Int) \u003d x*x",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:56:59 PM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306734_1925316823",
+      "id": "20160816-205649_1284984828",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:56:59 PM",
+      "dateFinished": "Oct 16, 2018 11:56:59 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cosas que te pueden interesar",
+      "text": "%md \n* [Scala Functions vs Methods](http://jim-mcbeath.blogspot.com.ar/2009/05/scala-functions-vs-methods.html).\n* [Functional Scala: Turning Methods into Functions (or WTF is eta expansion?)](https://gleichmann.wordpress.com/2011/01/09/functional-scala-turning-methods-into-functions/).\n*  [Más sobre funciones anónimas](https://docs.scala-lang.org/es/tutorials/tour/anonymous-function-syntax.html).",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:29:47 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://jim-mcbeath.blogspot.com.ar/2009/05/scala-functions-vs-methods.html\"\u003eScala Functions vs Methods\u003c/a\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://gleichmann.wordpress.com/2011/01/09/functional-scala-turning-methods-into-functions/\"\u003eFunctional Scala: Turning Methods into Functions (or WTF is eta expansion?)\u003c/a\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://docs.scala-lang.org/es/tutorials/tour/anonymous-function-syntax.html\"\u003eMás sobre funciones anónimas\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306738_1936089792",
+      "id": "20160817-003508_150760482",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:29:42 PM",
+      "dateFinished": "Oct 16, 2018 11:29:42 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n## ~.- Estructuras de Control",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:33:36 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12.0,
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Estructuras de Control\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306739_1935705043",
+      "id": "20160623-200215_23879145",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:33:31 PM",
+      "dateFinished": "Oct 16, 2018 11:33:31 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "While",
+      "text": "%md \u0026nbsp;\n- `scala` tiene la sentencia `while` para crear bucles. \n- No tiene el *clásico* bucle `for` de C, Java, Fortran, etc.\n- `scala` no tiene por defecto los operadores de decremento `--` e incremento `++` pero se pueden usar los operadores `-\u003d` y `+\u003d` para hacer lo mismo.",
+      "dateUpdated": "Oct 16, 2018 8:25:06 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 6.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003escala\u003c/code\u003e tiene la sentencia \u003ccode\u003ewhile\u003c/code\u003e para crear bucles.\u003c/li\u003e\n\u003cli\u003eNo tiene el \u003cem\u003eclásico\u003c/em\u003e bucle \u003ccode\u003efor\u003c/code\u003e de C, Java, Fortran, etc.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003escala\u003c/code\u003e no tiene por defecto los operadores de decremento \u003ccode\u003e--\u003c/code\u003e e incremento \u003ccode\u003e++\u003c/code\u003e pero se pueden usar los operadores \u003ccode\u003e-\u003d\u003c/code\u003e y \u003ccode\u003e+\u003d\u003c/code\u003e para hacer lo mismo.\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306739_1935705043",
+      "id": "20160623-200215_838802559",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "While",
+      "text": "var i, sum \u003d 0  \nwhile ( i \u003c 10) {  \n  sum +\u003d i  \n  i+\u003d1  \n}  \nprintln(sum)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:57:21 PM",
+      "config": {
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306740_1933781298",
+      "id": "20160623-200215_1076609123",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:57:21 PM",
+      "dateFinished": "Oct 16, 2018 11:57:21 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "For",
+      "text": "%md \u0026nbsp;\n- `scala` tiene una sentencia `for` distinta que la de los lenguajes C, Java, etc. con la cual se puede simular la de estos lenguajes.\n- La sentencia `for` es en realidad muy poderosa. \n- En el siguiente ejemplo la sentencia `for` toma los posibles valores de la variable `i` de una secuencia (ya lo vimos).\n- Para más información ver: [Bucles en Scala](http://www.tutorialspoint.com/scala/scala_for_loop.htm).",
+      "dateUpdated": "Oct 16, 2018 11:33:47 PM",
+      "config": {
+        "tableHide": false,
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ccode\u003escala\u003c/code\u003e tiene una sentencia \u003ccode\u003efor\u003c/code\u003e distinta que la de los lenguajes C, Java, etc. con la cual se puede simular la de estos lenguajes.\u003c/li\u003e\n\u003cli\u003eLa sentencia \u003ccode\u003efor\u003c/code\u003e es en realidad muy poderosa.\u003c/li\u003e\n\u003cli\u003eEn el siguiente ejemplo la sentencia \u003ccode\u003efor\u003c/code\u003e toma los posibles valores de la variable \u003ccode\u003ei\u003c/code\u003e de una secuencia (ya lo vimos).\u003c/li\u003e\n\u003cli\u003ePara más información ver: \u003ca href\u003d\"http://www.tutorialspoint.com/scala/scala_for_loop.htm\"\u003eBucles en Scala\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306741_1933396550",
+      "id": "20160623-200215_1753481700",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "For",
+      "text": "var sum \u003d 0  \nfor ( i \u003c- 0 until 10) {\n  sum +\u003d i  \n}  \nprintln(sum)\n\nfor (i \u003c- List(1,2,3)) println(i)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:58:19 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306742_1934550796",
+      "id": "20160623-200215_567407727",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:57:35 PM",
+      "dateFinished": "Oct 16, 2018 11:57:36 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Bucles implícitos",
+      "text": "%md \u0026nbsp;\n- En `scala` se pueden definir bucles de manera funcional (declarativa) aprovechando los métodos propios de las secuencias\u003csep\u003e1\u003c/sep\u003e, como `sum` en el siguiente ejemplo.\n\n- Los métodos para secuencias pueden encontrarse en [API GenTraversableOnce](http://www.scala-lang.org/api/current/index.html#scala.collection.GenTraversableOnce).",
+      "dateUpdated": "Oct 16, 2018 8:25:06 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 6.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cp\u003e\u0026nbsp;\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cp\u003eEn \u003ccode\u003escala\u003c/code\u003e se pueden definir bucles de manera funcional (declarativa) aprovechando los métodos propios de las secuencias\u003csep\u003e1\u003c/sep\u003e, como \u003ccode\u003esum\u003c/code\u003e en el siguiente ejemplo.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eLos métodos para secuencias pueden encontrarse en \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.collection.GenTraversableOnce\"\u003eAPI GenTraversableOnce\u003c/a\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306742_1934550796",
+      "id": "20160623-200215_249693191",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Bucles Implícitos",
+      "text": "(0 until 10).sum\n(1 until 10 by 2).product\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:57:54 PM",
+      "config": {
+        "tableHide": false,
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306743_1934166047",
+      "id": "20160623-200215_540994360",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:57:54 PM",
+      "dateFinished": "Oct 16, 2018 11:57:55 PM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "If",
+      "text": "%md \n- Los `if`\u0027s funcionan igual que en todos los lenguajes.\n- En `scala` todas las construcciones son expresiones, inclusive las sentencias `if`.",
+      "dateUpdated": "Oct 16, 2018 11:34:24 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cul\u003e\n\u003cli\u003eLos \u003ccode\u003eif\u003c/code\u003e\u0027s funcionan igual que en todos los lenguajes.\u003c/li\u003e\n\u003cli\u003eEn \u003ccode\u003escala\u003c/code\u003e todas las construcciones son expresiones, inclusive las sentencias \u003ccode\u003eif\u003c/code\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306743_1934166047",
+      "id": "20160623-200215_1820589274",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "If",
+      "text": "if (true)   \n  println(\"no son necesarias la llavaes con una sola sentencia\")  \n\nif (1 + 1 \u003d\u003d 2) {  \n  println(\"multiples\")  \n  println(\"sentencias\")  \n  println(\"requieren\")  \n  println(\"llaves\")  \n} else {  \n  println(\"la matemática está equivocada!\")  \n  println(\"o su computadora se volció loca\")  \n}  \n\nval vegano \u003d false  \nval almuerzo \u003d  if (vegano) \"lechuga\" else \"choripan\"  \n\nprintln(almuerzo)  ",
+      "dateUpdated": "Oct 16, 2018 11:34:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306744_1932242303",
+      "id": "20160623-200215_1927221105",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n\n## ~.- Operaciones útiles\n\nA continuación veremos algunos ejemplos de diferentes operaciones que resultan muy útiles en `scala`. Experimenta con los ejemplos. Algunos conceptos que aparecen van a ser explicados después.",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:59:06 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12.0,
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Operaciones útiles\u003c/h2\u003e\n\u003cp\u003eA continuación veremos algunos ejemplos de diferentes operaciones que resultan muy útiles en \u003ccode\u003escala\u003c/code\u003e. Experimenta con los ejemplos. Algunos conceptos que aparecen van a ser explicados después.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306745_1931857554",
+      "id": "20160623-200215_1819320049",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 16, 2018 11:58:57 PM",
+      "dateFinished": "Oct 16, 2018 11:58:57 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Imprimir en Pantalla",
+      "text": "%md \n- Scala tiene un *shortcut* al `Sistem.out.println` de Java como así también `print`, `printf`, etc.\n- Se puede usar `printf`. Ver [Printf cheat sheet](http://alvinalexander.com/programming/printf-format-cheat-sheet).\n- Todas están definidas en una clase que se importa por defecto (`scala.Predef`). \n\n- Para más información ver: [scala.Predef](http://www.scala-lang.org/api/current/index.html#scala.Predef$).",
+      "dateUpdated": "Oct 16, 2018 8:25:06 PM",
+      "config": {
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 6.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cul\u003e\n\u003cli\u003e\u003cp\u003eScala tiene un \u003cem\u003eshortcut\u003c/em\u003e al \u003ccode\u003eSistem.out.println\u003c/code\u003e de Java como así también \u003ccode\u003eprint\u003c/code\u003e, \u003ccode\u003eprintf\u003c/code\u003e, etc.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eSe puede usar \u003ccode\u003eprintf\u003c/code\u003e. Ver \u003ca href\u003d\"http://alvinalexander.com/programming/printf-format-cheat-sheet\"\u003ePrintf cheat sheet\u003c/a\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eTodas están definidas en una clase que se importa por defecto (\u003ccode\u003escala.Predef\u003c/code\u003e).\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003ePara más información ver: \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.Predef$\"\u003escala.Predef\u003c/a\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306745_1931857554",
+      "id": "20160623-200215_1667859618",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Imprimir en pantalla",
+      "text": "\n//usando println\nprintln(\"Hola mundo\")\n\n//usando printf\nprintf(\"El número que le sigue a 2 es %.16f (casi).\", Math.nextAfter(2.0, 3))\n\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:00:02 AM",
+      "config": {
+        "tableHide": false,
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306746_1933011801",
+      "id": "20160623-200215_810868533",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:00:03 AM",
+      "dateFinished": "Oct 17, 2018 12:00:03 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Interpolación de Strings",
+      "text": "%md \n- Es un mecanismo que permite embeber valores de variables dentro de un string.\n- Se indica mediante una `s` delante de la primer comilla del string.\n- También se pueden embeber expresiones más compejas encerrándolas entre llaves:\n\n- Para más información ver: [String interpolation in Scala](http://docs.scala-lang.org/overviews/core/string-interpolation.html).",
+      "dateUpdated": "Oct 16, 2018 11:34:43 PM",
+      "config": {
+        "tableHide": false,
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12.0,
+        "editorHide": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": false,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cul\u003e\n\u003cli\u003e\u003cp\u003eEs un mecanismo que permite embeber valores de variables dentro de un string.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eSe indica mediante una \u003ccode\u003es\u003c/code\u003e delante de la primer comilla del string.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003eTambién se pueden embeber expresiones más compejas encerrándolas entre llaves:\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\u003cp\u003ePara más información ver: \u003ca href\u003d\"http://docs.scala-lang.org/overviews/core/string-interpolation.html\"\u003eString interpolation in Scala\u003c/a\u003e.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306747_1932627052",
+      "id": "20160623-200215_439954318",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Interpolación de Strings",
+      "text": "import scala.math._  \nval dosPi \u003d Pi*2\nprintln(s\"Dame $dosPi zas\")\nprintln(s\"Mejor dame ${4 * Pi} zas\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:00:19 AM",
+      "config": {
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306748_1930703307",
+      "id": "20160623-200215_903540991",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:00:19 AM",
+      "dateFinished": "Oct 17, 2018 12:00:20 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Rangos",
+      "text": "//crea un range entre 1 y 10 inclusive \nval range \u003d 1 to 10   \n//crea un range entre 1 y 10 excluyéndolo   \nval range2 \u003d 1 until 10   \n//desde 2 a 10 saltando de a 3  \nval range3 \u003d 2 until 10 by 3   \n// Convierte a lista\nprintln(range3.toList)  ",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:00:29 AM",
+      "config": {
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306748_1930703307",
+      "id": "20160623-200215_1180409461",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:00:29 AM",
+      "dateFinished": "Oct 17, 2018 12:00:31 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Números",
+      "text": "val num \u003d -5  \nval numAbs \u003d num.abs //valor absoluto  \nval max5or7 \u003d numAbs.max(7)  \nval min5or7 \u003d numAbs.min(7)  \nprintln(numAbs) \nprintln(max5or7)   \nprintln(min5or7)   \n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:00:33 AM",
+      "config": {
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306749_1930318558",
+      "id": "20160623-200215_1422775772",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:00:33 AM",
+      "dateFinished": "Oct 17, 2018 12:00:34 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Operaciones sobre Strings",
+      "text": "val reverse \u003d \"Scala\".reverse //da vuelta el string   \nprintln(reverse)\n\nval cap \u003d \"scala\".capitalize //Pone primera letra en mayúscula  \nprintln(cap)\n\nval multi \u003d \"Scala!\" * 7 //repite n veces   \nprintln(multi)\n\nval int \u003d \"123\".toInt //parsea a Int  \nprintln(int)  ",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:00:36 AM",
+      "config": {
+        "editorMode": "ace/mode/scala",
+        "colWidth": 6.0,
+        "editorHide": false,
+        "title": true,
+        "enabled": true,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306749_1930318558",
+      "id": "20160623-200215_614757432",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:00:36 AM",
+      "dateFinished": "Oct 17, 2018 12:00:38 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n## ~.- Contenedores\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:02:05 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003e~.- Contenedores\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539743523371_-1036285480",
+      "id": "20181016-233203_1781818698",
+      "dateCreated": "Oct 16, 2018 11:32:03 PM",
+      "dateStarted": "Oct 16, 2018 11:35:08 PM",
+      "dateFinished": "Oct 16, 2018 11:35:08 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Arreglos",
+      "text": "%md \n\n* Los arreglos se construyen con `Array(element1, element2, ...)`.\n* Internamente los arreglos en Scala son los arreglos primitivos de Java (`Array[Int]` en Scala es `int[]` de Java, `Array[String]` es `String[]` de Java, etc.).\n* Los arreglos son mutables (pueden modificar sus elementos aunque no su tamaño).\n* Los elementos de un arreglo pueden ser de cualquier tipo, pero el tipo final es la superclase común más cercana:\n```scala\n  class Foo(val value1:Int)\n  class Bar(value1:Int, val value2:Int) extends Foo(value1)\n  val list:Array[Foo] \u003d Array(new Foo(1), new Bar(2,3))\n```\n\nPara mas información sobre ver: \n* [Documentación Scala sobre arreglos](http://www.scala-lang.org/api/current/index.html#scala.Array).",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:02:55 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eLos arreglos se construyen con \u003ccode\u003eArray(element1, element2, ...)\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003eInternamente los arreglos en Scala son los arreglos primitivos de Java (\u003ccode\u003eArray[Int]\u003c/code\u003e en Scala es \u003ccode\u003eint[]\u003c/code\u003e de Java, \u003ccode\u003eArray[String]\u003c/code\u003e es \u003ccode\u003eString[]\u003c/code\u003e de Java, etc.).\u003c/li\u003e\n  \u003cli\u003eLos arreglos son mutables (pueden modificar sus elementos aunque no su tamaño).\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eLos elementos de un arreglo pueden ser de cualquier tipo, pero el tipo final es la superclase común más cercana:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"scala\"\u003e  class Foo(val value1:Int)\n  class Bar(value1:Int, val value2:Int) extends Foo(value1)\n  val list:Array[Foo] \u003d Array(new Foo(1), new Bar(2,3))\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003ePara mas información sobre ver:\u003cbr/\u003e* \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.Array\"\u003eDocumentación Scala sobre arreglos\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539743564970_-872889790",
+      "id": "20181016-233244_232119137",
+      "dateCreated": "Oct 16, 2018 11:32:44 PM",
+      "dateStarted": "Oct 17, 2018 12:02:47 AM",
+      "dateFinished": "Oct 17, 2018 12:02:47 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Arreglo de tipo Array[Int]  \nval array1 \u003d Array(1, 2, 3)  \n\n//Arreglo de tipo Array[String]  \nval array2 \u003d Array(\"a\", \"b\", \"c\")\n\n//Los valores se acceden con (index) no [index]    \nval itemAtIndex0 \u003d array2(0)  \n\n//de igual manera se modifican    \narray2(0) \u003d \"d\"    \n\n//Arreglo que contiene distintos tipo  \nval array3 \u003d Array(\"a\", 2, true)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:03:09 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539743743850_-1944414954",
+      "id": "20181016-233543_1697170849",
+      "dateCreated": "Oct 16, 2018 11:35:43 PM",
+      "dateStarted": "Oct 17, 2018 12:03:09 AM",
+      "dateFinished": "Oct 17, 2018 12:03:10 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Listas",
+      "text": "%md\n\n* Las listas se construyen con `List(element1, element2, ...)`.\n* Los tipos de sus elementos pueden ser de cualquier tipo, pero el tipo final es la superclase común más cercana:\n```scala\n  class Foo(val value1:Int)\n  class Bar(value1:Int, val value2:Int) extends Foo(value1)\n  val list:List[Foo] \u003d List(new Foo(1), new Bar(2,3))\n```\n* Las listas por defecto son **inmutables** (cualquier cambio crea una lista nueva, dejando la original tal cual). En el ejemplo siguiente se muestra como crear una mutable.\n* Están implementadas con listas ligadas por lo que agregar un elemento se hace a tiempo constante pero el acceso a un elemento es lineal.\n*  Se pueden concatenar listas mutables con inmutables, devolviendo el tipo inmutable. \n\nPara más información ver: \n* [Documentación Scala sobre listas](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List).\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:03:29 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "title": true,
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eLas listas se construyen con \u003ccode\u003eList(element1, element2, ...)\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eLos tipos de sus elementos pueden ser de cualquier tipo, pero el tipo final es la superclase común más cercana:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"scala\"\u003e  class Foo(val value1:Int)\n  class Bar(value1:Int, val value2:Int) extends Foo(value1)\n  val list:List[Foo] \u003d List(new Foo(1), new Bar(2,3))\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003eLas listas por defecto son \u003cstrong\u003einmutables\u003c/strong\u003e (cualquier cambio crea una lista nueva, dejando la original tal cual). En el ejemplo siguiente se muestra como crear una mutable.\u003c/li\u003e\n  \u003cli\u003eEstán implementadas con listas ligadas por lo que agregar un elemento se hace a tiempo constante pero el acceso a un elemento es lineal.\u003c/li\u003e\n  \u003cli\u003eSe pueden concatenar listas mutables con inmutables, devolviendo el tipo inmutable.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003ePara más información ver:\u003cbr/\u003e* \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.List\"\u003eDocumentación Scala sobre listas\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539743957949_1257017703",
+      "id": "20181016-233917_139569277",
+      "dateCreated": "Oct 16, 2018 11:39:17 PM",
+      "dateStarted": "Oct 16, 2018 11:39:33 PM",
+      "dateFinished": "Oct 16, 2018 11:39:33 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Listas inmutable con tipo List[Int]  \nval list1 \u003d List(1, 2, 3) \n\n//Listas inmutable con tipo List[Any]  \nval list2 \u003d List(\"a\", 2, true) \n\nimport collection.mutable   \n//Listas mutables\n\nval mlist \u003d mutable.ListBuffer(\"a\", \"b\", \"c\")  \n\n//Se accede con (indice) no [indice]   \nval firstItem \u003d list1(0) \n\n//Se modifican sus valores de la misma forma (sulo listas mutables)    \nmlist(0) \u003d \"d\"    \nmlist\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:03:51 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539744025226_1400437098",
+      "id": "20181016-234025_918060535",
+      "dateCreated": "Oct 16, 2018 11:40:25 PM",
+      "dateStarted": "Oct 17, 2018 12:03:51 AM",
+      "dateFinished": "Oct 17, 2018 12:03:53 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Maps",
+      "text": "%md\n* Los *Maps* se construyen con `Map(key1 -\u003e value1, key2 -\u003e value2, ...)`\n* Pueden almacenar diferentes tipos, pero el tipo final de las claves/valores serán la superclase común más cercana.\n* El `Map` por defecto (`Predef.Map`) es inmutable.\n* No se pueden tener claves duplicadas. Si se agrega un par clave/valor que ya existe se sobreescribe.\n\nVer también:\n* [scala.Predef](http://www.scala-lang.org/api/current/index.html#scala.Predef$).\n* [Documentación Scala sobre maps](http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Map).",
+      "user": "anonymous",
+      "dateUpdated": "Oct 16, 2018 11:43:07 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "title": true,
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003eLos \u003cem\u003eMaps\u003c/em\u003e se construyen con \u003ccode\u003eMap(key1 -\u0026gt; value1, key2 -\u0026gt; value2, ...)\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003ePueden almacenar diferentes tipos, pero el tipo final de las claves/valores serán la superclase común más cercana.\u003c/li\u003e\n  \u003cli\u003eEl \u003ccode\u003eMap\u003c/code\u003e por defecto (\u003ccode\u003ePredef.Map\u003c/code\u003e) es inmutable.\u003c/li\u003e\n  \u003cli\u003eNo se pueden tener claves duplicadas. Si se agrega un par clave/valor que ya existe se sobreescribe.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eVer también:\u003cbr/\u003e* \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.Predef$\"\u003escala.Predef\u003c/a\u003e.\u003cbr/\u003e* \u003ca href\u003d\"http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Map\"\u003eDocumentación Scala sobre maps\u003c/a\u003e.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539744098139_837088087",
+      "id": "20181016-234138_1518007765",
+      "dateCreated": "Oct 16, 2018 11:41:38 PM",
+      "dateStarted": "Oct 16, 2018 11:42:21 PM",
+      "dateFinished": "Oct 16, 2018 11:42:21 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val map \u003d Map(\"one\" -\u003e 1, \"two\" -\u003e 2, \"three\" -\u003e 3)   \n//Map de tipo Map[String, Int]  \n\n//Maps elimina duplicados de las claves:  \nprintln(Map(\"a\" -\u003e 1, \"a\" -\u003e 2)) //Map(a -\u003e 2)  \n\n//Tomar un elemento según clave usando map(key)   \nval one \u003d map(\"one\")  \nprintln(one) // 1 \n\n// Si la clave no existe lanza la exceptcion NoSuchElementException\n//val four \u003d map(\"four\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:05:16 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539744178867_-1366445485",
+      "id": "20181016-234258_198183319",
+      "dateCreated": "Oct 16, 2018 11:42:58 PM",
+      "dateStarted": "Oct 17, 2018 12:05:16 AM",
+      "dateFinished": "Oct 17, 2018 12:05:17 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val baseDir\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\"\n\n//z.put(\"baseDir\", baseDir)\nprint(\"\"\"%html\n\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\".-\") !\u003d -1 ) {\n            heads[i].innerHTML \u003d inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n            j++;\n        }\n        i++\n    }\n\u003c/script\u003e\n\"\"\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 12:14:43 AM",
+      "config": {
+        "tableHide": true,
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "baseDir: String \u003d https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\".-\") !\u003d -1 ) {\n            heads[i].innerHTML \u003d inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n            j++;\n        }\n        i++\n    }\n\u003c/script\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306751_1931088056",
+      "id": "20160623-200215_1294174914",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "dateStarted": "Oct 17, 2018 12:14:43 AM",
+      "dateFinished": "Oct 17, 2018 12:15:06 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "dateUpdated": "Oct 16, 2018 8:25:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539732306751_1931088056",
+      "id": "20160623-233442_1133997844",
+      "dateCreated": "Oct 16, 2018 8:25:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Tutorial Scala",
+  "id": "2DUEWZRWM",
+  "angularObjects": {
+    "2CVPMZQDC:shared_process": [],
+    "2CVZRWYXD:shared_process": [],
+    "2CXC3J873:shared_process": [],
+    "2CW9KVZFB:shared_process": [],
+    "2CWBZB5J2:shared_process": [],
+    "2CWQPZNH6:shared_process": [],
+    "2CWB7GZBS:shared_process": [],
+    "2CUMUUMCY:shared_process": [],
+    "2CX36SA9F:shared_process": [],
+    "2CVWTU38R:shared_process": [],
+    "2CVGJFNZ4:shared_process": [],
+    "2CUKDKYCE:shared_process": [],
+    "2CWDFCUCZ:shared_process": [],
+    "2CUNFHEUZ:shared_process": [],
+    "2CW49AZMR:shared_process": [],
+    "2CWE35VRJ:shared_process": [],
+    "2CWV6WPV3:shared_process": [],
+    "2CXGQWA1W:shared_process": [],
+    "2CUU3PNNG:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

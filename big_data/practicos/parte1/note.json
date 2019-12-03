@@ -1,0 +1,680 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n# Curso Diplodatos Programación Distribuida Sobre Grandes Volumenes de Datos\n# Práctico parte 1\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:02:08 PM",
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCurso Diplodatos Programación Distribuida Sobre Grandes Volumenes de Datos\u003c/h1\u003e\n\u003ch1\u003ePráctico parte 1\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926159_809231593",
+      "id": "20181017-122345_269738593",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "dateStarted": "Oct 17, 2018 4:54:49 PM",
+      "dateFinished": "Oct 17, 2018 4:54:49 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Para hacer con RDD\u0027s",
+      "dateUpdated": "Oct 17, 2018 5:02:14 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003ePara hacer con RDD\u0026rsquo;s\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926160_819619814",
+      "id": "20181017-115740_1467308851",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio 1",
+      "text": "%md\n### Ejercicio 1\n\nCada línea del archivo `~/diplodatos_bigdata/ds/links_raw.txt` contiene un url de una página web seguido de los links que posee a otras páginas web:\n```\n\u003curl\u003e \u003curl link 1\u003e \u003curl link 2\u003e ... \u003curl link n\u003e\n```\n\nBasándose en la utilización de la técnica de *MapReduce* que se mostró en el programa `word count` del notebook **Clase 01 - Introducción a Spark** haga un programa en Spark que cuente la cantidad de links que apuntan a cada página.\n\n#### Ayuda\n\nA continuación está el comienzo del programa. Falta hacer el *MapReduce* y mostrar el resultado.\n",
+      "dateUpdated": "Oct 17, 2018 5:02:34 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 1\u003c/h3\u003e\n\u003cp\u003eCada línea del archivo \u003ccode\u003e~/diplodatos_bigdata/ds/links_raw.txt\u003c/code\u003e contiene un url de una página web seguido de los links que posee a otras páginas web:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e\u0026lt;url\u0026gt; \u0026lt;url link 1\u0026gt; \u0026lt;url link 2\u0026gt; ... \u0026lt;url link n\u0026gt;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eBasándose en la utilización de la técnica de \u003cem\u003eMapReduce\u003c/em\u003e que se mostró en el programa \u003ccode\u003eword count\u003c/code\u003e del notebook \u003cstrong\u003eClase 01 - Introducción a Spark\u003c/strong\u003e haga un programa en Spark que cuente la cantidad de links que apuntan a cada página.\u003c/p\u003e\n\u003ch4\u003eAyuda\u003c/h4\u003e\n\u003cp\u003eA continuación está el comienzo del programa. Falta hacer el \u003cem\u003eMapReduce\u003c/em\u003e y mostrar el resultado.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926160_819619814",
+      "id": "20181017-115555_1095258694",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val baseDir \u003d \" .... /diplodatos_bigdata\" // llenar con el directorio git\n\nval lines \u003d sc.textFile(baseDir + \"/ds/links_raw.txt\")\n\nval linksTo \u003d lines\n                .flatMap(l \u003d\u003e l.split(\" \").tail) // separo los urls y tomo solo los apuntados\n// Ahora linksTo tiene las paginas apuntadas\n\n// Completar los ...\n\nval invLinkCount \u003d linksTo.map(...)\n                    .reduceByKey(...)\n\nval result \u003d invLinkCount.sortBy(p \u003d\u003e ..., ascending \u003d false)\n\nresult.collect() // traigo resultados\n      .take(10)\n      .foreach(p \u003d\u003e ...)\n",
+      "dateUpdated": "Oct 17, 2018 4:52:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926160_819619814",
+      "id": "20181017-115831_2142696179",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Ejercicio 2\n\nComplete los `...` en el siguiente programa para contar la cantidad de veces que aparece la letra \u0027c\u0027 en los archivos en `./logs/`.\n\n#### Ayuda\n\n\n* Se puede usar el método `.filter` (ya visto en ejemplos anteriores) para crear un RDD solo con la letra C.\n* El método `count` de RDD cuenta la cantidad de elementos.\n* La letra \u0027c\u0027 se escribe `\u0027c\u0027` en Scala.\n",
+      "dateUpdated": "Oct 17, 2018 5:05:56 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 2\u003c/h3\u003e\n\u003cp\u003eComplete los \u003ccode\u003e...\u003c/code\u003e en el siguiente programa para contar la cantidad de veces que aparece la letra \u0026lsquo;c\u0026rsquo; en los archivos en \u003ccode\u003e./logs/\u003c/code\u003e.\u003c/p\u003e\n\u003ch4\u003eAyuda\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eSe puede usar el método \u003ccode\u003e.filter\u003c/code\u003e (ya visto en ejemplos anteriores) para crear un RDD solo con la letra C.\u003c/li\u003e\n  \u003cli\u003eEl método \u003ccode\u003ecount\u003c/code\u003e de RDD cuenta la cantidad de elementos.\u003c/li\u003e\n  \u003cli\u003eLa letra \u0026lsquo;c\u0026rsquo; se escribe \u003ccode\u003e\u0026#39;c\u0026#39;\u003c/code\u003e en Scala.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926160_819619814",
+      "id": "20181017-122021_611447568",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val linesRDD \u003d sc.textFile(\"./logs/\")\n\nval charsRDD \u003d linesRDD\n                .flatMap(l \u003d\u003e l)\n\nval onlyCRDD \u003d charsRDD.\n                    ...(c \u003d\u003e ... \u003d\u003d ...)\n\nonlyCRDD.count\n",
+      "dateUpdated": "Oct 17, 2018 4:52:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-122027_1935632241",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Ejercicio 3\n\nModifique el siguiente programa para que cuente la cantidad de lineas que comienzan con la palabra `INFO`, `WARN` y `ERROR`.\n\nHaga cache de los RDD para hacer el programa más eficiente. \n",
+      "dateUpdated": "Oct 17, 2018 5:06:03 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 3\u003c/h3\u003e\n\u003cp\u003eModifique el siguiente programa para que cuente la cantidad de lineas que comienzan con la palabra \u003ccode\u003eINFO\u003c/code\u003e, \u003ccode\u003eWARN\u003c/code\u003e y \u003ccode\u003eERROR\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eHaga cache de los RDD para hacer el programa más eficiente.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-122317_440108867",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val linesRDD \u003d sc.textFile(\"./logs/\") // RDD de entrada\n\nval linesTrim \u003d inputRDD.map(l \u003d\u003e l.trim) // Borro espacios en borde\n\nval linesInfo \u003d linesTrim.filter(l \u003d\u003e l.startsWith(\"INFO\"))\n\nval linesWarn \u003d // Completar\n\nval linesError \u003d // Completar\n\nprintln(\"Cantidad de lineas INFO: \" + linesInfo.count )\n\nprintln(\"Cantidad de lineas WARN: \" + ... ) //Completar\n\nprintln(\"Cantidad de lineas ERROR: \" + ... )  //Completar\n\n",
+      "dateUpdated": "Oct 17, 2018 4:52:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-122341_2016787069",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Ejercicio 4\n\nEl archivo en `~/diplodatos_bigdata/ds/flights.csv` contiene información de vuelos realizados en 2008 (solo 100.000), uno por línea.\n\nLos datos estan separados por coma y la columna 22 tiene un `1` si el vuelo fue cancelado. Además si el vuelo fue redirigido se indica con \u00271\u0027 en la columna 24.\n\nCompletar el siguiente programa que devuelve el porcentaje de vuelos cancelados y el porcentaje de redirigidos.\n\nUtilizar cache si lo cree conveniente.\n",
+      "dateUpdated": "Oct 17, 2018 5:06:11 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 4\u003c/h3\u003e\n\u003cp\u003eEl archivo en \u003ccode\u003e~/diplodatos_bigdata/ds/flights.csv\u003c/code\u003e contiene información de vuelos realizados en 2008 (solo 100.000), uno por línea.\u003c/p\u003e\n\u003cp\u003eLos datos estan separados por coma y la columna 22 tiene un \u003ccode\u003e1\u003c/code\u003e si el vuelo fue cancelado. Además si el vuelo fue redirigido se indica con \u0026lsquo;1\u0026rsquo; en la columna 24.\u003c/p\u003e\n\u003cp\u003eCompletar el siguiente programa que devuelve el porcentaje de vuelos cancelados y el porcentaje de redirigidos.\u003c/p\u003e\n\u003cp\u003eUtilizar cache si lo cree conveniente.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-123340_1748479084",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val input \u003d sc.textFile(\".../diplodatos_bigdata/ds/flights.csv\") // Completar el path\n\nval nTotal \u003d input.count - 1 // la primer fila tiene el nombre de las columnas\n\nval parsed \u003d input.map(l \u003d\u003e l.split(\",\"))\n\nval cancel \u003d parsed.filter(l \u003d\u003e l(21) \u003d\u003d ...) // Completar\n\nval redir \u003d ... //completar\n\nval nCancel \u003d cancel.count\nval nRedir \u003d redir.count\n\nprintln(\"% cancelados \u003d \" + nCancel.toDouble *100 / nTotal)\nprintln(\"% redireccionados \u003d \" + ... ) // Completar\n",
+      "dateUpdated": "Oct 17, 2018 4:52:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-123355_1061822713",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Ejercicio 5\n\nLa columna 14 del mismo archivo tiene el tiempo del vuelo en minutos. Calcular el máximo.\n\n#### Ayuda\n\n* Busque en la documentacion de la [API RDD](http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD) una acción para calcular el máximo.\n* Ojo que puede haber valores no definidos.\n",
+      "dateUpdated": "Oct 17, 2018 5:06:18 PM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 5\u003c/h3\u003e\n\u003cp\u003eLa columna 14 del mismo archivo tiene el tiempo del vuelo en minutos. Calcular el máximo.\u003c/p\u003e\n\u003ch4\u003eAyuda\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eBusque en la documentacion de la \u003ca href\u003d\"http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD\"\u003eAPI RDD\u003c/a\u003e una acción para calcular el máximo.\u003c/li\u003e\n  \u003cli\u003eOjo que puede haber valores no definidos.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926161_819235065",
+      "id": "20181017-123421_149337337",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Acá hay que escribir el programa\n",
+      "dateUpdated": "Oct 17, 2018 4:52:06 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926162_820389311",
+      "id": "20181017-123612_1693858747",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## Para hacer con **Spark SQL**",
+      "dateUpdated": "Oct 17, 2018 5:06:27 PM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003ePara hacer con \u003cstrong\u003eSpark SQL\u003c/strong\u003e\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926162_820389311",
+      "id": "20181017-123455_735765736",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Ejercicio 6",
+      "text": "%md\n\n### Ejercicio 6\n\nComplete el código siguiente para calcular en un Dataframe la cantidad de usuarios por pais desagregando por sexo usando SQL plano o programático.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:12:10 PM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "results": {},
+        "enabled": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "title": false,
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 6\u003c/h3\u003e\n\u003cp\u003eComplete el código siguiente para calcular en un Dataframe la cantidad de usuarios por pais desagregando por sexo usando SQL plano o programático.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539805926162_820389311",
+      "id": "20181017-123555_742276598",
+      "dateCreated": "Oct 17, 2018 4:52:06 PM",
+      "dateStarted": "Oct 17, 2018 4:59:21 PM",
+      "dateFinished": "Oct 17, 2018 4:59:21 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Lectura de csv\nval profiles \u003d spark.read.format(\"csv\")\n                .option(\"delimiter\", \"\\\\t\")\n                .option(\"header\", \"true\")\n                .option(\"inferSchema\", \"true\")\n                .load(\"../../diplodatos_bigdata/ds/userid-profile.tsv\")\n\n// Creación de tabla temporal\nprofiles.createOrReplaceTempView(\"users\")\n    \n// Con SQL plano\nval nUsr4CtryGen \u003d spark.sql(\"SELECT country, gender, count(*) AS cantidad FROM users GROUP BY ... ORDER BY ...\")\n\nnUsr4CtryGen.show\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 4:58:17 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806169865_-44573833",
+      "id": "20181017-165609_830357654",
+      "dateCreated": "Oct 17, 2018 4:56:09 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Con SQL porgramático\n\nval nUsr4CtryGen2 \u003d profiles\n                .groupBy($\"country\", ...).agg(count($\"*\").as(\"cantidad\"))\n                .orderBy($\"country\", ...)\n\nnUsr4CtryGen2.show\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 4:57:03 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806215901_1378874504",
+      "id": "20181017-165655_447564231",
+      "dateCreated": "Oct 17, 2018 4:56:55 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Ejercicio 7\nComplete el siguiente programa par calcular la edad promedio por género y guarde el resultado como tabla SQL y como archivo parquet.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:12:26 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 7\u003c/h3\u003e\n\u003cp\u003eComplete el siguiente programa par calcular la edad promedio por género y guarde el resultado como tabla SQL y como archivo parquet.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806376531_252912043",
+      "id": "20181017-165936_1307027043",
+      "dateCreated": "Oct 17, 2018 4:59:36 PM",
+      "dateStarted": "Oct 17, 2018 5:00:15 PM",
+      "dateFinished": "Oct 17, 2018 5:00:15 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Como tabla SQL\n\nspark.sql(\"drop table if exists gen_prom\") // borro la tabla si existe\n\nspark.sql(\"create table gen_prom as SELECT gender, avg(...) AS age_avg FROM users GROUP BY ...\")\n\n// Cargo tabla y muestro su contenido\nspark.sql(\"select * from gen_prom\").show\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:00:02 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806396271_-1286452982",
+      "id": "20181017-165956_242290252",
+      "dateCreated": "Oct 17, 2018 4:59:56 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Como parquet\n\nval genProm \u003d profiles\n                .groupBy($\"...\").agg(avg($\"...\").as(\"age_avg\"))\n\nimport org.apache.spark.sql.SaveMode\n\ngenProm.write.mode(SaveMode.Overwrite).save(\"./gen_prom.parquet\")\n\n// Cargo parquet y muestro su contenido\nspark.read.load(\"./gen_prom.parquet\").show\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:00:46 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806434581_-1521272405",
+      "id": "20181017-170034_97474385",
+      "dateCreated": "Oct 17, 2018 5:00:34 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n### Ejercicio 8\nCon el dataset `profiles` complete el siguiente código para calcular la cantidad de registraciones por día de la semana.\n\n#### Ayuda:\n\nEn [SQL API Function Reference](http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.sql.functions$) en la sección \"Date time functions\" hay métodos para manipular fechas.\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:12:33 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": false,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio 8\u003c/h3\u003e\n\u003cp\u003eCon el dataset \u003ccode\u003eprofiles\u003c/code\u003e complete el siguiente código para calcular la cantidad de registraciones por día de la semana.\u003c/p\u003e\n\u003ch4\u003eAyuda:\u003c/h4\u003e\n\u003cp\u003eEn \u003ca href\u003d\"http://spark.apache.org/docs/2.1.1/api/scala/index.html#org.apache.spark.sql.functions$\"\u003eSQL API Function Reference\u003c/a\u003e en la sección \u0026ldquo;Date time functions\u0026rdquo; hay métodos para manipular fechas.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806458053_-2072971679",
+      "id": "20181017-170058_1102792330",
+      "dateCreated": "Oct 17, 2018 5:00:58 PM",
+      "dateStarted": "Oct 17, 2018 5:01:40 PM",
+      "dateFinished": "Oct 17, 2018 5:01:40 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val regByDayOfWeek \u003d profiles.select($\"registered\", unix_timestamp($\"registered\", ...).as(\"reg_sec\"))\n                    .select($\"*\", from_unixtime(...,\"E\").as(\"day_week\"))\n\n\nz.show(regByDayOfWeek.groupBy($\"day_week\").count)\n",
+      "user": "anonymous",
+      "dateUpdated": "Oct 17, 2018 5:02:04 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1539806500426_1892143216",
+      "id": "20181017-170140_958150946",
+      "dateCreated": "Oct 17, 2018 5:01:40 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Práctico (parte 1)",
+  "id": "2DV41H3N9",
+  "angularObjects": {
+    "2CVGDCPRC:shared_process": [],
+    "2CWU5CDHZ:shared_process": [],
+    "2CT8824T5:shared_process": [],
+    "2CU175KYA:shared_process": [],
+    "2CVW8KG5T:shared_process": [],
+    "2CVUG7AYZ:shared_process": [],
+    "2CU2PGWJK:shared_process": [],
+    "2CTY6NNQE:shared_process": [],
+    "2CWN7MJ7T:shared_process": [],
+    "2CU7V5RQS:shared_process": [],
+    "2CTE4TQQ3:shared_process": [],
+    "2CWGK27UU:shared_process": [],
+    "2CT7JSWR8:shared_process": [],
+    "2CWKBNSF7:shared_process": [],
+    "2CWTDEFZ3:shared_process": [],
+    "2CUBD912K:shared_process": [],
+    "2CW4YQTDJ:shared_process": [],
+    "2CTW8ZN43:shared_process": [],
+    "2CVTSPTRQ:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

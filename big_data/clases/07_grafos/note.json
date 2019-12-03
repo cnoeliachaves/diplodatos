@@ -1,0 +1,1072 @@
+{
+  "paragraphs": [
+    {
+      "text": "print(s\"\"\"%html\n\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"$baseDir/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n\"\"\")\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003ccenter\u003e\n    \u003ch1\u003e\u003ca href\u003d\"http://diplodatos.famaf.unc.edu.ar/\"\u003eDiplomatura en Ciencia de Datos, Aprendizaje Automático y sus Aplicaciones\u003c/a\u003e\u003c/h1\u003e\n    \u003ch2\u003eCurso \u003ca href\u003d\"https://sites.google.com/view/eleccion-optativas-diplodatos/programaci%C3%B3n-distribu%C3%ADda-sobre-grandes-vol%C3%BAmenes-de-datos\"\u003eProgramación Distribuida sobre Grandes Volúmenes de Datos\u003c/a\u003e\u003c/h2\u003e\n\u003c/center\u003e\n\n\u003cbr\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e Damián Barsotti  \u003c/h3\u003e\n\n\u003ch3 style\u003d\"text-align:center;\"\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    Facultad de Matemática Astronomía Física y Computación\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ca href\u003d\"http://www.unc.edu.ar\"\u003e\n    Universidad Nacional de Córdoba\n    \u003c/a\u003e\n\u003cbr/\u003e\n    \u003ccenter\u003e\n    \u003ca href\u003d\"http://www.famaf.unc.edu.ar\"\u003e\n    \u003cimg src\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases/comun/logo%20UNC%20FAMAF%202016.png\" alt\u003d\"Drawing\" style\u003d\"width:50%;\"/\u003e\n    \u003c/a\u003e\n    \u003c/center\u003e\n\u003c/h3\u003e\n\n\u003cp style\u003d\"font-size:15px;\"\u003e\n    \u003cbr /\u003e\n        This work is licensed under a\n        \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003eCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International License\u003c/a\u003e.\n    \u003ca rel\u003d\"license\" href\u003d\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"\u003e\n        \u003cimg alt\u003d\"Creative Commons License\" style\u003d\"border-width:0;vertical-align:middle;float:right\" src\u003d\"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png\" /\u003e\n    \u003c/a\u003e\n\u003c/p\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578460_-818389869",
+      "id": "20171010-191319_1407757246",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Antes de comenzar",
+      "text": "%md\n### Antes de comenzar\n#### En máquina virtual\n1. Lanzar terminal\n1. Actualizar repo:\n```sh\ncd diplodatos_bigdata\ngit pull\n```\n1. Lanzar [Zeppelin](http://zeppelin.apache.org/):\n```sh\ncd\ncd spark/zeppelin-0.7.3-bin-all\n./bin/zeppelin.sh\n```\n1. En navegador abrir [http://localhost:8080](http://localhost:8080) o `http://nabucodonosor.ccad.unc.edu.ar:\u003cmi puerto\u003e`\n1. Seleccionar `Import note`\n1. Elegir json en `diplodatos_bigdata/clases/07_grafos/note.json`\n2. Seleccionar `Clase 07 - Grandes Grafos Sociales`\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "title": false,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eAntes de comenzar\u003c/h3\u003e\n\u003ch4\u003eEn máquina virtual\u003c/h4\u003e\n\u003col\u003e\n  \u003cli\u003eLanzar terminal\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eActualizar repo:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd diplodatos_bigdata\ngit pull\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003e\n  \u003cp\u003eLanzar \u003ca href\u003d\"http://zeppelin.apache.org/\"\u003eZeppelin\u003c/a\u003e:\u003c/p\u003e\n  \u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd\ncd spark/zeppelin-0.7.3-bin-all\n./bin/zeppelin.sh\n\u003c/code\u003e\u003c/pre\u003e\u003c/li\u003e\n  \u003cli\u003eEn navegador abrir \u003ca href\u003d\"http://localhost:8080\"\u003ehttp://localhost:8080\u003c/a\u003e o \u003ccode\u003ehttp://nabucodonosor.ccad.unc.edu.ar:\u0026lt;mi puerto\u0026gt;\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eSeleccionar \u003ccode\u003eImport note\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eElegir json en \u003ccode\u003ediplodatos_bigdata/clases/07_grafos/note.json\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eSeleccionar \u003ccode\u003eClase 07 - Grandes Grafos Sociales\u003c/code\u003e\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578461_-818774618",
+      "id": "20171026-104737_1316799732",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n# Grandes Grafos Sociales",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eGrandes Grafos Sociales\u003c/h1\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578462_-817620371",
+      "id": "20171101-121050_1177283744",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Ejemplo Red de Usuarios Twitter",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjemplo Red de Usuarios Twitter\u003c/h3\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578462_-817620371",
+      "id": "20181024-105040_178046617",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Load Tweets",
+      "text": "\nval tweets \u003d spark.read.parquet(\"../../diplodatos_bigdata/ds/tweets.pqt\")\ntweets.count\n\ntweets.show\n// RT_times es la cantidad de veces que el usuario retweeteo el tweet\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578463_-818005120",
+      "id": "20171101-124010_495006264",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Definición de la red de usuarios:\n\n* **Usuario A está conectado con usuario B** si B retweeteó un mensaje de A.\n* Queremos también la cantidad de retweets que hizo B de mensajes de A **distintos o no**.",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eDefinición de la red de usuarios:\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003cstrong\u003eUsuario A está conectado con usuario B\u003c/strong\u003e si B retweeteó un mensaje de A.\u003c/li\u003e\n  \u003cli\u003eQueremos también la cantidad de retweets que hizo B de mensajes de A \u003cstrong\u003edistintos o no\u003c/strong\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578463_-818005120",
+      "id": "20181024-111922_1953182558",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Generamos las conecciones por usuarios",
+      "text": "val twitterConnections \u003d tweets\n                        .groupBy($\"user\", $\"RT_by\")\n                        .agg(sum($\"RT_times\").as(\"count_RT\"), count($\"*\").as(\"count_distinct_RT\"))\n\ntwitterConnections.count\n\nz.show(twitterConnections,5)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578464_-832240829",
+      "id": "20171101-121958_1394663112",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## GraphFrames\n\n* Utiliza la interface Spark SQL (Dataframes).\n* Creada por [Databricks](https://databricks.com/).\n* Por ahora no viene en la distribución estandard de Spark (solo [GraphX](http://spark.apache.org/graphx/) sobre RDD\u0027s).\n* Algoritmos ya implementados como: \n    - Breadth-first search (BFS)\n    - Componentes (fuertemente) conexas\n    - Label Propagation Algorithm (para detectar comunidades)\n    - PageRank\n    - Shortest paths\n    - Triangle count.\n* **Agregación de mensajes** para hacer algoritmos.\n* **Motif finding** para queries. \n\n### Documentación:\n\n* [User Guide](https://graphframes.github.io/user-guide.html).\n* [Documentación de la API](https://graphframes.github.io/api/scala/index.html#org.graphframes.GraphFrame).\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eGraphFrames\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eUtiliza la interface Spark SQL (Dataframes).\u003c/li\u003e\n  \u003cli\u003eCreada por \u003ca href\u003d\"https://databricks.com/\"\u003eDatabricks\u003c/a\u003e.\u003c/li\u003e\n  \u003cli\u003ePor ahora no viene en la distribución estandard de Spark (solo \u003ca href\u003d\"http://spark.apache.org/graphx/\"\u003eGraphX\u003c/a\u003e sobre RDD\u0026rsquo;s).\u003c/li\u003e\n  \u003cli\u003eAlgoritmos ya implementados como:\n    \u003cul\u003e\n      \u003cli\u003eBreadth-first search (BFS)\u003c/li\u003e\n      \u003cli\u003eComponentes (fuertemente) conexas\u003c/li\u003e\n      \u003cli\u003eLabel Propagation Algorithm (para detectar comunidades)\u003c/li\u003e\n      \u003cli\u003ePageRank\u003c/li\u003e\n      \u003cli\u003eShortest paths\u003c/li\u003e\n      \u003cli\u003eTriangle count.\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\u003cstrong\u003eAgregación de mensajes\u003c/strong\u003e para hacer algoritmos.\u003c/li\u003e\n  \u003cli\u003e\u003cstrong\u003eMotif finding\u003c/strong\u003e para queries.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eDocumentación:\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://graphframes.github.io/user-guide.html\"\u003eUser Guide\u003c/a\u003e.\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://graphframes.github.io/api/scala/index.html#org.graphframes.GraphFrame\"\u003eDocumentación de la API\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578464_-832240829",
+      "id": "20171102-112550_410534992",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Creación de grafo\n\n* Se crean a partir de `DataFrame` de aristas y/o vértices.\n* DataFrame de aristas debe tener las columnas `src` y `dst` (por lo menos).\n* DataFrame de vértices debe tener la columna `id` (por lo menos).\n* Los grafos son dirigidos.\n* Se almacenan con redundancia (vertex cut):\n  ![](http://spark.apache.org/docs/latest/img/edge_cut_vs_vertex_cut.png)\n\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eCreación de grafo\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003eSe crean a partir de \u003ccode\u003eDataFrame\u003c/code\u003e de aristas y/o vértices.\u003c/li\u003e\n  \u003cli\u003eDataFrame de aristas debe tener las columnas \u003ccode\u003esrc\u003c/code\u003e y \u003ccode\u003edst\u003c/code\u003e (por lo menos).\u003c/li\u003e\n  \u003cli\u003eDataFrame de vértices debe tener la columna \u003ccode\u003eid\u003c/code\u003e (por lo menos).\u003c/li\u003e\n  \u003cli\u003eLos grafos son dirigidos.\u003c/li\u003e\n  \u003cli\u003eSe almacenan con redundancia (vertex cut):\u003cbr/\u003e \u003cimg src\u003d\"http://spark.apache.org/docs/latest/img/edge_cut_vs_vertex_cut.png\" /\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578465_-832625578",
+      "id": "20181027-002925_1222103561",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.graphframes._\n\n// DataFrame de vértices\nval v \u003d spark.createDataFrame(List(\n  (\"a\", \"Alice\", 34),\n  (\"b\", \"Bob\", 36),\n  (\"c\", \"Charlie\", 30),\n  (\"d\", \"David\", 29),\n  (\"e\", \"Esther\", 32),\n  (\"f\", \"Fanny\", 36),\n  (\"g\", \"Gabby\", 60)\n)).toDF(\"id\", \"name\", \"age\")\n\n// DataFrame de aristas\nval e \u003d spark.createDataFrame(List(\n  (\"a\", \"b\", \"amigo\"),\n  (\"b\", \"c\", \"sigue\"),\n  (\"c\", \"b\", \"sigue\"),\n  (\"f\", \"c\", \"sigue\"),\n  (\"e\", \"f\", \"sigue\"),\n  (\"e\", \"d\", \"amigo\"),\n  (\"d\", \"a\", \"amigo\"),\n  (\"a\", \"e\", \"amigo\"),\n  (\"a\", \"h\", \"amigo\")\n)).toDF(\"src\", \"dst\", \"relationship\")\n\n// Creacion de GraphFrame\n\nval g \u003d GraphFrame(v, e)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578465_-832625578",
+      "id": "20181027-003337_2137373030",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.show(g.vertices)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578466_-831471331",
+      "id": "20181027-004033_1700498403",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "z.show(g.edges)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578466_-831471331",
+      "id": "20181027-004041_1915960464",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Hay que renombrar las conexiones de tweeter:",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eHay que renombrar las conexiones de tweeter:\u003c/h3\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578467_-831856080",
+      "id": "20181027-004514_1661700664",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Rename edges columns",
+      "text": "val edgesDF \u003d twitterConnections.select($\"user\".as(\"src\"), $\"RT_by\".as(\"dst\"),\n                                       $\"count_RT\", $\"count_distinct_RT\")\n                                       \nedgesDF.printSchema\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578467_-831856080",
+      "id": "20171101-124136_101875926",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Creación de GraphFrame solo con aristas",
+      "text": "\nval graph \u003d GraphFrame.fromEdges(edgesDF)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578468_-833779825",
+      "id": "20171101-124739_82230555",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Operaciones básicas sobre grafos\n\nA continuación veremos como calcular: \n* la cantidad de vértices (usuarios)\n* la cantidad de arístas (conexiones)\n* el grado de cada vértice (cantidad de conexiones por usuario)",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eOperaciones básicas sobre grafos\u003c/h3\u003e\n\u003cp\u003eA continuación veremos como calcular:\u003cbr/\u003e* la cantidad de vértices (usuarios)\u003cbr/\u003e* la cantidad de arístas (conexiones)\u003cbr/\u003e* el grado de cada vértice (cantidad de conexiones por usuario)\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578468_-833779825",
+      "id": "20171102-153102_880120870",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Tamaño del grafo",
+      "text": "val verticesCount \u003d graph.vertices.count\nprintln(\"Cantidad de nodos: \" + verticesCount)\n\nval edgesCount \u003d graph.edges.count\nprintln(\"Cantidad de conecciones: \" + edgesCount)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578468_-833779825",
+      "id": "20171101-124845_773490911",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Cantidad de conecciones por usuario",
+      "text": "val nodesDegree \u003d graph.degrees\n\nval sortedByDegree \u003d graph.degrees.orderBy($\"degree\".desc)\n\nz.show(sortedByDegree,10)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578469_-834164574",
+      "id": "20171102-131720_1147432214",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## Ejemplo Agregación de Mensajes\n\n### Collective influence\n\n#### Aplicaciones: \n* Marketing viral (influencia de opinión)\n* Detección de focos de dispersión de enfermedades\n\n#### Cómo funciona:\n* En cada iteración elimina del grafo el nodo de mayor CI y recalcula el CI de los nodos restantes\n* Termina cuando la componente gigante se destruye\n* Solución básica: \\\\(O(N2)\\\\). Optimizada: \\\\(O(NlogN)\\\\)\n\n\u003e Influence maximization in complex networks through optimal percolation” (Flaviano Morone, Hernán A. Makse, 27 Jun 2015) https://arxiv.org/abs/1506.08326\n\n\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEjemplo Agregación de Mensajes\u003c/h2\u003e\n\u003ch3\u003eCollective influence\u003c/h3\u003e\n\u003ch4\u003eAplicaciones:\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eMarketing viral (influencia de opinión)\u003c/li\u003e\n  \u003cli\u003eDetección de focos de dispersión de enfermedades\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eCómo funciona:\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eEn cada iteración elimina del grafo el nodo de mayor CI y recalcula el CI de los nodos restantes\u003c/li\u003e\n  \u003cli\u003eTermina cuando la componente gigante se destruye\u003c/li\u003e\n  \u003cli\u003eSolución básica: \\(O(N2)\\). Optimizada: \\(O(NlogN)\\)\u003c/li\u003e\n\u003c/ul\u003e\n\u003cblockquote\u003e\n  \u003cp\u003eInfluence maximization in complex networks through optimal percolation” (Flaviano Morone, Hernán A. Makse, 27 Jun 2015) \u003ca href\u003d\"https://arxiv.org/abs/1506.08326\"\u003ehttps://arxiv.org/abs/1506.08326\u003c/a\u003e\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578469_-834164574",
+      "id": "20171102-132006_1774167041",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Fórmua de CI\n\nLa formula de collective influence para un vértice \\\\(i\\\\) es:\n\n$$ CI(i) \u003d (degree_i -  1) \\times \\sum\\limits_{j \\in vecinos(i)} (degree_j -  1)$$\n\nSe supone un grafo **no dirigido**.\n\n### Pasos para calcular collective influence son:\n\n* generar una nueva instancia de GraphFrame pero esta vez utilizando `nodesDegree` como el `DataFrame` de nodos ya que tenemos la información del degree de cada nodo.\n* importar `AggregateMessages`.\n* calcular collective influence de cada individuo usando `AggregateMessages` de `GraphFrame`\n* ordenar los individuos por su collective influence de mayor a menor\n* imprimir el listado de individuos\n\n\n#### Documentación para implementar con GraphFrames:\n\n* Documentación sobre [AggregateMessages](http://graphframes.github.io/user-guide.html#message-passing-via-aggregatemessages) con ejemplo.\n* Documentación de [API AggregateMessages](http://graphframes.github.io/api/scala/index.html#org.graphframes.lib.AggregateMessages).\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eFórmua de CI\u003c/h3\u003e\n\u003cp\u003eLa formula de collective influence para un vértice \\(i\\) es:\u003c/p\u003e\n\u003cp\u003e$$ CI(i) \u003d (degree_i - 1) \\times \\sum\\limits_{j \\in vecinos(i)} (degree_j - 1)$$\u003c/p\u003e\n\u003cp\u003eSe supone un grafo \u003cstrong\u003eno dirigido\u003c/strong\u003e.\u003c/p\u003e\n\u003ch3\u003ePasos para calcular collective influence son:\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003egenerar una nueva instancia de GraphFrame pero esta vez utilizando \u003ccode\u003enodesDegree\u003c/code\u003e como el \u003ccode\u003eDataFrame\u003c/code\u003e de nodos ya que tenemos la información del degree de cada nodo.\u003c/li\u003e\n  \u003cli\u003eimportar \u003ccode\u003eAggregateMessages\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003ecalcular collective influence de cada individuo usando \u003ccode\u003eAggregateMessages\u003c/code\u003e de \u003ccode\u003eGraphFrame\u003c/code\u003e\u003c/li\u003e\n  \u003cli\u003eordenar los individuos por su collective influence de mayor a menor\u003c/li\u003e\n  \u003cli\u003eimprimir el listado de individuos\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eDocumentación para implementar con GraphFrames:\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eDocumentación sobre \u003ca href\u003d\"http://graphframes.github.io/user-guide.html#message-passing-via-aggregatemessages\"\u003eAggregateMessages\u003c/a\u003e con ejemplo.\u003c/li\u003e\n  \u003cli\u003eDocumentación de \u003ca href\u003d\"http://graphframes.github.io/api/scala/index.html#org.graphframes.lib.AggregateMessages\"\u003eAPI AggregateMessages\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578470_-833010327",
+      "id": "20171102-131904_821311339",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "//Cree un nuevo grafo usando los nodos con su degree disponible en nodesDegree y las aristas originales\nval degreeGraph \u003d GraphFrame(nodesDegree, graph.edges )\n// Aristas y vértices están bien particionadas\n\n//importamos AggregateMessages\nimport org.graphframes.lib.{AggregateMessages \u003d\u003e AM}\n\n/*\nComenzamos a calcular CI: Por cada nodo calcula la sumatoria del degree-1 de sus vecinos.\nEl DataFrame sumNeighborDegrees debe tener 2 columnas: id, sum_neighbor_degree \n*/\nval msgToSrc \u003d AM.dst(\"degree\") - 1\nval msgToDst \u003d AM.src(\"degree\") - 1\nval sumNeighborDegrees \u003d degreeGraph.aggregateMessages\n  .sendToSrc(msgToSrc)  // send destination user\u0027s age to source\n  .sendToDst(msgToDst)  // send source user\u0027s age to destination\n  .agg(sum(AM.msg).as(\"sum_neighbor_degree\"))  // Hacer aggregation sobre el valor de AM.msg\n\n\n/*\nCalculamos CI: para terminar de calcular CI debemos multiplicar la sumatoria calculada en el paso anterior por el degree - 1 de \ncada nodo.\nAdemás se hace join de sumNeighborDegrees con degrees para tener todas las columnas necesarias para calcular CI.\nEl DataFrame collectiveInfluence debe tener 2 columnas: id, ci y degree\nPor ultimo ordena descendentemente por ci \n*/\nval collectiveInfluence \u003d nodesDegree.join(sumNeighborDegrees,\"id\")\n                          .select($\"id\", (($\"degree\" - 1)* $\"sum_neighbor_degree\").as(\"ci\"), $\"degree\")\n                          .sort($\"ci\".desc)\n\nz.show(collectiveInfluence,20)\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578470_-833010327",
+      "id": "20171101-125025_1054455316",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Motif Finding\n\n* Es un Domain-Specific Language (DSL) para expresar queries.\n* La unidad básica es la expresión de una arista\n\n### Ejemplos\n\n* `graph.find(\"(a)-[e]-\u003e(b); (b)-[e2]-\u003e(a)\")` expresa vértices unidos en ambas direcciones.\n    - Devuelve un DataFrame con columnas `\"a\"`, `\"b\"`, `\"e\"` y `\"e2\"`.\n* `graph.find(\"(a)-[e]-\u003e(b); (b)-[e2]-\u003e(c)\")` expresa dos aristas pegadas con un vértice común `b`. \n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eMotif Finding\u003c/h2\u003e\n\u003cul\u003e\n  \u003cli\u003eEs un Domain-Specific Language (DSL) para expresar queries.\u003c/li\u003e\n  \u003cli\u003eLa unidad básica es la expresión de una arista\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eEjemplos\u003c/h3\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ccode\u003egraph.find(\u0026quot;(a)-[e]-\u0026gt;(b); (b)-[e2]-\u0026gt;(a)\u0026quot;)\u003c/code\u003e expresa vértices unidos en ambas direcciones.\n    \u003cul\u003e\n      \u003cli\u003eDevuelve un DataFrame con columnas \u003ccode\u003e\u0026quot;a\u0026quot;\u003c/code\u003e, \u003ccode\u003e\u0026quot;b\u0026quot;\u003c/code\u003e, \u003ccode\u003e\u0026quot;e\u0026quot;\u003c/code\u003e y \u003ccode\u003e\u0026quot;e2\u0026quot;\u003c/code\u003e.\u003c/li\u003e\n    \u003c/ul\u003e\n  \u003c/li\u003e\n  \u003cli\u003e\u003ccode\u003egraph.find(\u0026quot;(a)-[e]-\u0026gt;(b); (b)-[e2]-\u0026gt;(c)\u0026quot;)\u003c/code\u003e expresa dos aristas pegadas con un vértice común \u003ccode\u003eb\u003c/code\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578471_-833395076",
+      "id": "20181027-013740_419047675",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "g.find(\"(a)-[e]-\u003e(b); (b)-[e2]-\u003e(a)\")\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578471_-833395076",
+      "id": "20181027-015215_1027188878",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Buscar pares de vértices en ambas direccione:\nval motifs \u003d g.find(\"(a)-[e]-\u003e(b); (b)-[e2]-\u003e(a)\")\n\nmotifs.printSchema\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578472_-835318820",
+      "id": "20181027-015100_1394496292",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "motifs.show()\n\n// Despues se pueden aplicar filtros para queries mas complejos.\nmotifs.filter(\"b.age \u003e 30\").show()\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578472_-835318820",
+      "id": "20181027-015533_344573808",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Visualización\n\nA continuación visualizaremos con [Gephi](https://gephi.org/) la parte del grafo (subgrafo) que contiene los mayores influencers.\n\nPara ello generaremos archivos *csv* como entrada de esta herramienta ",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eVisualización\u003c/h2\u003e\n\u003cp\u003eA continuación visualizaremos con \u003ca href\u003d\"https://gephi.org/\"\u003eGephi\u003c/a\u003e la parte del grafo (subgrafo) que contiene los mayores influencers.\u003c/p\u003e\n\u003cp\u003ePara ello generaremos archivos \u003cem\u003ecsv\u003c/em\u003e como entrada de esta herramienta\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578472_-835318820",
+      "id": "20171102-160936_360694508",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val minCI : Long \u003d 29000000\nval minDegree : Long \u003d 600\n\n// tomo los usarios con mayor influencia o con más conecciones\nval ciTops \u003d collectiveInfluence.filter($\"ci\" \u003e\u003d minCI || $\"degree\" \u003e\u003d minDegree)\n\nval gInfluencers \u003d GraphFrame(ciTops, graph.edges)\n\n// Tomo solo las aristas que tengan vértices\nval veTops \u003d gInfluencers.find(\"(a)-[e]-\u003e(b)\")\n                .cache\nveTops.count\nveTops.printSchema",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578473_-835703569",
+      "id": "20171102-000354_1806019706",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.sql.SaveMode\n\nval eTops \u003d veTops.select($\"e.*\")\n\neTops.printSchema\n\n// Grafo de los tops\nval gTops \u003d GraphFrame(ciTops, eTops)\n\n\ngTops.vertices.select($\"*\", $\"id\".as(\"Label\")).coalesce(1)\n    .write.mode(SaveMode.Overwrite).option(\"header\",true)\n     .csv(\"top_influencers.csv\")\n\ngTops.edges.select($\"src\".as(\"Source\"), $\"dst\".as(\"Target\"), $\"count_RT\",$\"count_distinct_RT\")\n     .coalesce(1)\n     .write.mode(SaveMode.Overwrite).option(\"header\",true)\n     .csv(\"top_edges.csv\")\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 6.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578473_-835703569",
+      "id": "20181027-020144_852191582",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Gephi\n\nLanzar el programa desde una terminal ejecutando:\n\n```sh\ncd\nspark/gephi-0.9.2/bin/gephi\n```\n\nSeguir las instrucciones del profesor.",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eGephi\u003c/h3\u003e\n\u003cp\u003eLanzar el programa desde una terminal ejecutando:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class\u003d\"sh\"\u003ecd\nspark/gephi-0.9.2/bin/gephi\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eSeguir las instrucciones del profesor.\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578474_-834549322",
+      "id": "20171102-161414_1207858851",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n\u003eAntes de terminar llene el formulario en [https://goo.gl/forms/CPtPHPFZA35JI8QM2](https://goo.gl/forms/CPtPHPFZA35JI8QM2).\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cblockquote\u003e\n  \u003cp\u003eAntes de terminar llene el formulario en \u003ca href\u003d\"https://goo.gl/forms/CPtPHPFZA35JI8QM2\"\u003ehttps://goo.gl/forms/CPtPHPFZA35JI8QM2\u003c/a\u003e.\u003c/p\u003e\n\u003c/blockquote\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578474_-834549322",
+      "id": "20171102-130138_490210310",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n### Ejercicio\n\nComplete el siguiente programa para calcular el grafo de todas las posibles conexiones a los 5 mayores influenciadores y graficar el resultado con Gephi. \n\n#### Ayuda\n* Busque en la documentación [Api Datasets](http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset) algún método que devuelva las *n* primeras files de un Dataset equivalente a la directiva SQL `LIMIT`. \n* Para llenar el comando `find` busque la documentación de [Motif finding](https://graphframes.github.io/user-guide.html#motif-finding).",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "results": {},
+        "enabled": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eEjercicio\u003c/h3\u003e\n\u003cp\u003eComplete el siguiente programa para calcular el grafo de todas las posibles conexiones a los 5 mayores influenciadores y graficar el resultado con Gephi. \u003c/p\u003e\n\u003ch4\u003eAyuda\u003c/h4\u003e\n\u003cul\u003e\n  \u003cli\u003eBusque en la documentación \u003ca href\u003d\"http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.Dataset\"\u003eApi Datasets\u003c/a\u003e algún método que devuelva las \u003cem\u003en\u003c/em\u003e primeras files de un Dataset equivalente a la directiva SQL \u003ccode\u003eLIMIT\u003c/code\u003e.\u003c/li\u003e\n  \u003cli\u003ePara llenar el comando \u003ccode\u003efind\u003c/code\u003e busque la documentación de \u003ca href\u003d\"https://graphframes.github.io/user-guide.html#motif-finding\"\u003eMotif finding\u003c/a\u003e.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578475_-834934071",
+      "id": "20171102-110542_600666434",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// take top n\nval topInfluencers \u003d collectiveInfluence... // solo los 5 primeros\n\nimport org.apache.spark.sql.SaveMode\n\n// Guardo Vértices\ntopInfluencers.select($\"*\", $\"id\".as(\"Label\")).coalesce(1)\n    .write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"top_influencers2.csv\")\n\n\nval gTops2 \u003d GraphFrame(topInfluencers, graph.edges)\n\nval eTops2 \u003d gTops2.find(\"...\") // Encuentre las aristas que tienen nodos\n    .select($\"e.src\".as(\"Source\"),$\"e.dst\".as(\"Target\"),$\"e.count_RT\",$\"e.count_distinct_RT\")\n\neTops2.coalesce(1)\n        .write.mode(SaveMode.Overwrite).option(\"header\",true).csv(\"top_edges2.csv\")\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "title": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578475_-834934071",
+      "id": "20171101-170622_751215254",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "FIN",
+      "text": "val baseDir\u003d\"https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\"\n\nz.put(\"baseDir\", baseDir)\nprint(\"\"\"%html\n\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\".-\") !\u003d -1 ) {\n            j++;\n            heads[i].innerHTML \u003d inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n        }\n        i++\n    }\n\u003c/script\u003e\n\"\"\")\n",
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "tableHide": true,
+        "editorSetting": {
+          "language": "scala"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "editorHide": true,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "baseDir: String \u003d https://git.cs.famaf.unc.edu.ar/dbarsotti/diplodatos_bigdata/raw/master/clases\n"
+          },
+          {
+            "type": "HTML",
+            "data": "\u003cscript\u003e\n    var heads \u003d document.getElementsByTagName(\u0027h2\u0027);\n    var numHeads \u003d heads.length;\n    var inner \u003d \"\";\n    var i \u003d 0;\n    var j \u003d 0;\n    while (i \u003c numHeads){\n        inner \u003d heads[i].innerHTML;\n        if (inner.search(\".-\") !\u003d -1 ) {\n            j++;\n            heads[i].innerHTML \u003d inner.replace(/(~|\\d+)\\.-/,\"\"+j+\".-\");\n        }\n        i++\n    }\n\u003c/script\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578476_-836857816",
+      "id": "20171010-191336_1667301043",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "dateUpdated": "Oct 27, 2018 2:36:18 AM",
+      "config": {
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1540618578476_-836857816",
+      "id": "20171010-192055_1187380897",
+      "dateCreated": "Oct 27, 2018 2:36:18 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Clase 07 - Grandes Grafos Sociales",
+  "id": "2DTPG4G36",
+  "angularObjects": {
+    "2CVPMZQDC:shared_process": [],
+    "2CVZRWYXD:shared_process": [],
+    "2CXC3J873:shared_process": [],
+    "2CW9KVZFB:shared_process": [],
+    "2CWBZB5J2:shared_process": [],
+    "2CWQPZNH6:shared_process": [],
+    "2CWB7GZBS:shared_process": [],
+    "2CUMUUMCY:shared_process": [],
+    "2CX36SA9F:shared_process": [],
+    "2CVWTU38R:shared_process": [],
+    "2CVGJFNZ4:shared_process": [],
+    "2CUKDKYCE:shared_process": [],
+    "2CWDFCUCZ:shared_process": [],
+    "2CUNFHEUZ:shared_process": [],
+    "2CW49AZMR:shared_process": [],
+    "2CWE35VRJ:shared_process": [],
+    "2CWV6WPV3:shared_process": [],
+    "2CXGQWA1W:shared_process": [],
+    "2CUU3PNNG:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
